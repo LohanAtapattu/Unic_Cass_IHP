@@ -1,0 +1,237 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1772872455
+<< metal3 >>
+rect 18570 2400 18580 2440
+rect 18620 2400 18630 2440
+rect 18570 -2600 18630 2400
+rect 18570 -2640 18580 -2600
+rect 18620 -2640 18630 -2600
+<< via3 >>
+rect 18580 2400 18620 2440
+rect 18580 -2640 18620 -2600
+<< metal4 >>
+rect 18540 2400 18580 2440
+rect 18620 2400 19420 2440
+rect -60 -50 70 -30
+rect -1040 -75 70 -50
+rect -1040 -115 -15 -75
+rect 25 -115 70 -75
+rect -1040 -140 70 -115
+rect 18380 -120 18420 -80
+rect 18460 -120 19420 -80
+rect -60 -160 70 -140
+rect 18450 -2640 18490 -2600
+rect 18530 -2640 18580 -2600
+rect 18620 -2640 18630 -2600
+<< via4 >>
+rect 18580 2400 18620 2440
+rect -15 -115 25 -75
+rect 18420 -120 18460 -80
+rect 18490 -2640 18530 -2600
+<< metal5 >>
+rect -960 3140 6780 3160
+rect -960 3042 19340 3140
+rect -960 2918 -812 3042
+rect -688 2918 19340 3042
+rect -960 2800 19340 2918
+rect 160 2400 18580 2440
+rect 18620 2400 18640 2440
+rect -960 -2980 -600 2280
+rect 160 2120 280 2400
+rect 2480 2120 2600 2400
+rect 14080 2120 14200 2400
+rect 16400 2120 16520 2400
+rect -60 -33 70 -30
+rect -60 -157 -57 -33
+rect 67 -157 70 -33
+rect -60 -160 70 -157
+rect 4800 -80 4920 200
+rect 7120 -80 7240 200
+rect 9440 -80 9560 200
+rect 11760 -80 11880 200
+rect 4800 -120 18420 -80
+rect 18460 -120 18480 -80
+rect 4800 -400 4920 -120
+rect 7120 -400 7240 -120
+rect 9440 -400 9560 -120
+rect 11760 -400 11880 -120
+rect 160 -2600 280 -2320
+rect 2480 -2600 2600 -2320
+rect 14080 -2600 14200 -2320
+rect 16400 -2600 16520 -2320
+rect 160 -2640 18490 -2600
+rect 18530 -2640 18570 -2600
+rect 18980 -2980 19340 2800
+rect -960 -3340 19340 -2980
+<< via5 >>
+rect -812 2918 -688 3042
+rect -57 -75 67 -33
+rect -57 -115 -15 -75
+rect -15 -115 25 -75
+rect 25 -115 67 -75
+rect -57 -157 67 -115
+<< metal6 >>
+rect -960 3140 6780 3160
+rect -960 3042 19340 3140
+rect -960 2918 -812 3042
+rect -688 2918 19340 3042
+rect -960 2800 19340 2918
+rect -960 -2980 -600 2280
+rect -140 -33 18320 220
+rect -140 -157 -57 -33
+rect 67 -157 18320 -33
+rect -140 -420 18320 -157
+rect 18980 -2980 19340 2800
+rect -960 -3340 19340 -2980
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_0
+timestamp 1772872455
+transform 1 0 1120 0 1 2820
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_1
+timestamp 1772872455
+transform 1 0 3420 0 1 2820
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_2
+timestamp 1772872455
+transform 1 0 5760 0 1 2820
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_3
+timestamp 1772872455
+transform 1 0 5760 0 1 -3020
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_4
+timestamp 1772872455
+transform 1 0 3440 0 1 -3020
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_5
+timestamp 1772872455
+transform 1 0 1120 0 1 -3020
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_6
+timestamp 1772872455
+transform 0 1 19120 -1 0 1160
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_7
+timestamp 1772872455
+transform 0 1 19120 -1 0 -1360
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_8
+timestamp 1772872455
+transform 0 1 -640 -1 0 -1360
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_9
+timestamp 1772872455
+transform 0 1 -640 -1 0 1160
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_10
+timestamp 1772872455
+transform 1 0 8080 0 1 2820
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_11
+timestamp 1772872455
+transform 1 0 10400 0 1 2820
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_12
+timestamp 1772872455
+transform 1 0 12720 0 1 2820
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_13
+timestamp 1772872455
+transform 1 0 15040 0 1 2820
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_14
+timestamp 1772872455
+transform 1 0 17360 0 1 2820
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_15
+timestamp 1772872455
+transform 1 0 8080 0 1 -3020
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_16
+timestamp 1772872455
+transform 1 0 10400 0 1 -3020
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_17
+timestamp 1772872455
+transform 1 0 12720 0 1 -3020
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_18
+timestamp 1772872455
+transform 1 0 15040 0 1 -3020
+box -1120 -320 1120 320
+use cap_cmim_MV9CWZ  cap_cmim_MV9CWZ_19
+timestamp 1772872455
+transform 1 0 17360 0 1 -3020
+box -1120 -320 1120 320
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_0
+timestamp 1772872455
+transform 1 0 990 0 1 1160
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_1
+timestamp 1772872455
+transform 1 0 3360 0 1 1160
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_2
+timestamp 1772872455
+transform 1 0 5720 0 1 1160
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_3
+timestamp 1772872455
+transform 1 0 990 0 1 -1360
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_4
+timestamp 1772872455
+transform 1 0 3360 0 1 -1360
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_5
+timestamp 1772872455
+transform 1 0 5720 0 1 -1360
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_6
+timestamp 1772872455
+transform 1 0 8080 0 1 1160
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_7
+timestamp 1772872455
+transform 1 0 10440 0 1 1160
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_8
+timestamp 1772872455
+transform 1 0 12800 0 1 1160
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_9
+timestamp 1772872455
+transform 1 0 15180 0 1 1160
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_10
+timestamp 1772872455
+transform 1 0 17540 0 1 1160
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_11
+timestamp 1772872455
+transform 1 0 8080 0 1 -1360
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_12
+timestamp 1772872455
+transform 1 0 10440 0 1 -1360
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_13
+timestamp 1772872455
+transform 1 0 12800 0 1 -1360
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_14
+timestamp 1772872455
+transform 1 0 15180 0 1 -1360
+box -1120 -1120 1120 1120
+use cap_cmim_RCJHDK  cap_cmim_RCJHDK_15
+timestamp 1772872455
+transform 1 0 17540 0 1 -1360
+box -1120 -1120 1120 1120
+<< labels >>
+rlabel metal6 s -960 2800 -880 2880 4 vdd
+port 1 nsew
+rlabel metal4 s -1040 -120 -1000 -80 4 vout
+port 2 nsew
+<< end >>

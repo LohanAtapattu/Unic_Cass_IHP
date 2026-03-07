@@ -1,0 +1,33 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1772872455
+<< error_p >>
+rect -20 -29 20 29
+<< metal2 >>
+rect -20 20 20 29
+rect -20 -29 20 -20
+<< via2 >>
+rect -20 -20 20 20
+<< metal3 >>
+rect -72 -20 -20 20
+rect 20 -20 72 20
+<< via3 >>
+rect -20 -20 20 20
+<< metal4 >>
+rect -20 20 20 72
+rect -20 -72 20 -20
+<< via4 >>
+rect -20 -20 20 20
+<< via5 >>
+rect -62 20 62 62
+rect -62 -20 -20 20
+rect -20 -20 20 20
+rect 20 -20 62 20
+rect -62 -62 62 -20
+<< metal6 >>
+rect -164 62 164 164
+rect -164 -62 -62 62
+rect 62 -62 164 62
+rect -164 -164 164 -62
+<< end >>
