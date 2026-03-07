@@ -4,590 +4,673 @@ K {}
 V {}
 S {}
 E {}
-N -0 170 -0 250 {lab=Vss}
-N -50 200 -0 200 {lab=Vss}
-N -50 140 -50 200 {lab=Vss}
-N -50 140 -0 140 {lab=Vss}
-N -0 80 70 80 {lab=Vbias3}
-N 70 80 70 140 {lab=Vbias3}
-N 40 140 70 140 {lab=Vbias3}
-N 0 -100 -0 -40 {lab=Vdd}
-N -0 -80 60 -80 {lab=Vdd}
-N 60 -80 60 -10 {lab=Vdd}
-N -0 -10 60 -10 {lab=Vdd}
-N 250 -90 250 -40 {lab=Vdd}
-N 250 -10 290 -10 {lab=Vdd}
-N 290 -70 290 -10 {lab=Vdd}
-N 290 -80 290 -70 {lab=Vdd}
-N 250 -80 290 -80 {lab=Vdd}
-N 250 -100 250 -90 {lab=Vdd}
-N 290 240 350 240 {lab=Vbias4}
-N 350 90 350 240 {lab=Vbias4}
-N 250 90 350 90 {lab=Vbias4}
-N 350 240 460 240 {lab=Vbias4}
-N 300 140 460 140 {lab=Vbias3}
-N 290 140 300 140 {lab=Vbias3}
-N 250 270 250 340 {lab=Vss}
-N 190 240 250 240 {lab=Vss}
-N 190 140 250 140 {lab=Vss}
-N 500 140 560 140 {lab=Vss}
-N 500 240 560 240 {lab=Vss}
-N 500 270 500 340 {lab=Vss}
-N 500 170 500 210 {lab=#net1}
-N 500 50 500 110 {lab=Vpcas}
-N 500 -110 500 -90 {lab=#net2}
-N 500 -30 500 -10 {lab=#net3}
-N 500 -200 500 -170 {lab=Vdd}
-N 500 -180 530 -180 {lab=Vdd}
-N 530 -180 530 -140 {lab=Vdd}
-N 500 -140 530 -140 {lab=Vdd}
-N 500 -60 570 -60 {lab=Vdd}
-N 500 20 570 20 {lab=Vdd}
-N 410 -140 460 -140 {lab=#net3}
-N 410 -140 410 -20 {lab=#net3}
-N 410 -20 500 -20 {lab=#net3}
-N 420 20 460 20 {lab=Vpcas}
-N 420 20 420 70 {lab=Vpcas}
-N 420 70 500 70 {lab=Vpcas}
-N 250 170 250 210 {lab=Vlow}
-N 140 190 250 190 {lab=Vlow}
-N 500 90 550 90 {lab=Vpcas}
-N 770 60 770 110 {lab=Vbias2}
-N 770 170 770 210 {lab=#net4}
-N 770 270 770 320 {lab=Vss}
-N 770 320 770 340 {lab=Vss}
-N 770 240 830 240 {lab=Vss}
-N 770 140 830 140 {lab=Vss}
-N 700 30 770 30 {lab=Vdd}
-N 770 -40 770 -0 {lab=Vdd}
-N 810 30 850 30 {lab=Vbias2}
-N 850 30 850 80 {lab=Vbias2}
-N 770 80 850 80 {lab=Vbias2}
-N 1000 -140 1000 -100 {lab=Vdd}
-N 1000 -100 1000 -90 {lab=Vdd}
-N 960 -110 1000 -110 {lab=Vdd}
-N 960 -110 960 -60 {lab=Vdd}
-N 960 -60 1000 -60 {lab=Vdd}
-N 960 -60 960 30 {lab=Vdd}
-N 960 30 1000 30 {lab=Vdd}
-N 1000 -30 1000 -0 {lab=Vhigh}
-N 1000 60 1000 110 {lab=Vbias1}
-N 1000 170 1000 210 {lab=#net5}
-N 1000 270 1000 320 {lab=Vss}
-N 1000 290 1040 290 {lab=Vss}
-N 1040 140 1040 290 {lab=Vss}
-N 1000 140 1040 140 {lab=Vss}
-N 1000 240 1040 240 {lab=Vss}
-N 770 310 830 310 {lab=Vss}
-N 830 140 830 310 {lab=Vss}
-N 500 300 560 300 {lab=Vss}
-N 560 140 560 300 {lab=Vss}
-N 1040 -60 1190 -60 {lab=Vbias1}
-N 1040 30 1190 30 {lab=Vbias2}
-N 1000 90 1080 90 {lab=Vbias1}
-N 1080 -60 1080 90 {lab=Vbias1}
-N 1230 -30 1230 -0 {lab=#net6}
-N 1230 60 1230 80 {lab=Vncas}
-N 1230 80 1270 80 {lab=Vncas}
-N 1270 140 1270 170 {lab=#net7}
-N 1270 230 1270 260 {lab=#net8}
-N 1230 260 1270 260 {lab=#net8}
-N 1000 320 1000 340 {lab=Vss}
-N 1230 320 1230 350 {lab=Vss}
-N 1230 340 1250 340 {lab=Vss}
-N 1250 290 1250 340 {lab=Vss}
-N 1230 290 1250 290 {lab=Vss}
-N 1220 200 1270 200 {lab=Vss}
-N 1220 110 1270 110 {lab=Vss}
-N 1230 -130 1230 -90 {lab=Vdd}
-N 1230 -120 1290 -120 {lab=Vdd}
-N 1290 -120 1290 30 {lab=Vdd}
-N 1230 30 1290 30 {lab=Vdd}
-N 1230 -60 1290 -60 {lab=Vdd}
-N 1270 80 1320 80 {lab=Vncas}
-N 1320 80 1320 110 {lab=Vncas}
-N 1310 110 1320 110 {lab=Vncas}
-N 1140 290 1190 290 {lab=#net7}
-N 1140 160 1140 290 {lab=#net7}
-N 1140 160 1270 160 {lab=#net7}
-N 1000 -10 1130 -10 {lab=Vhigh}
-N -0 80 0 110 {lab=Vbias3}
-N 250 20 250 30 {lab=Vbias4}
-N 250 90 250 110 {lab=Vbias4}
-N -0 20 0 80 {lab=Vbias3}
-N 250 30 250 90 {lab=Vbias4}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} -20 -10 0 0 {name=M1
-W=10
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+N -600 -250 -600 -210 {lab=vdd}
+N -600 -30 -600 100 {lab=#net1}
+N -600 210 -600 230 {lab=vss}
+N -560 -180 -460 -180 {lab=#net1}
+N -460 -180 -460 -110 {lab=#net1}
+N -600 -110 -460 -110 {lab=#net1}
+N -600 -150 -600 -110 {lab=#net1}
+N -600 -30 -470 -30 {lab=#net1}
+N -600 -110 -600 -30 {lab=#net1}
+N -430 -120 -430 -60 {lab=Pbias}
+N -430 0 -430 130 {lab=#net2}
+N -430 130 -120 130 {lab=#net2}
+N -560 130 -430 130 {lab=#net2}
+N -120 130 -120 160 {lab=#net2}
+N -120 120 -120 130 {lab=#net2}
+N -120 -230 -120 -200 {lab=vdd}
+N -210 -230 -120 -230 {lab=vdd}
+N -210 -230 -210 -170 {lab=vdd}
+N -210 -170 -120 -170 {lab=vdd}
+N -690 -250 -600 -250 {lab=vdd}
+N -690 -250 -690 -180 {lab=vdd}
+N -690 -180 -600 -180 {lab=vdd}
+N -700 210 -600 210 {lab=vss}
+N -600 160 -600 210 {lab=vss}
+N -700 130 -700 210 {lab=vss}
+N -700 130 -600 130 {lab=vss}
+N -430 -30 -380 -30 {lab=vss}
+N -430 -120 -370 -120 {lab=Pbias}
+N -600 -290 -600 -250 {lab=vdd}
+N -120 -280 -120 -230 {lab=vdd}
+N -120 260 -120 290 {lab=vss}
+N -180 260 -120 260 {lab=vss}
+N -120 220 -120 260 {lab=vss}
+N -180 190 -180 260 {lab=vss}
+N -180 190 -120 190 {lab=vss}
+N 460 -170 530 -170 {lab=Pbias}
+N 30 -270 30 -170 {lab=Pbias}
+N -80 -170 30 -170 {lab=Pbias}
+N 30 -360 30 -330 {lab=vdd}
+N 30 -360 90 -360 {lab=vdd}
+N 30 -390 30 -360 {lab=vdd}
+N 90 -360 90 -300 {lab=vdd}
+N 30 -300 90 -300 {lab=vdd}
+N 570 -230 570 -200 {lab=vdd}
+N 570 -230 650 -230 {lab=vdd}
+N 570 -280 570 -230 {lab=vdd}
+N 650 -230 650 -170 {lab=vdd}
+N 570 -170 650 -170 {lab=vdd}
+N 570 120 570 160 {lab=#net3}
+N 70 190 120 190 {lab=vss}
+N 120 220 120 290 {lab=#net4}
+N 380 190 430 190 {lab=vss}
+N 380 220 380 290 {lab=#net5}
+N 570 190 630 190 {lab=vss}
+N 570 220 570 290 {lab=beta}
+N -40 120 220 120 {lab=#net2}
+N -120 -140 -120 120 {lab=#net2}
+N 220 120 280 190 {lab=#net2}
+N 280 190 340 190 {lab=#net2}
+N 160 190 220 190 {lab=#net3}
+N 220 190 280 120 {lab=#net3}
+N 490 120 570 120 {lab=#net3}
+N 570 -140 570 120 {lab=#net3}
+N 490 120 490 190 {lab=#net3}
+N 280 120 490 120 {lab=#net3}
+N 490 190 530 190 {lab=#net3}
+N -80 190 -40 190 {lab=#net2}
+N -40 120 -40 190 {lab=#net2}
+N -120 120 -40 120 {lab=#net2}
+N 120 -30 120 160 {lab=#net6}
+N 380 -30 380 160 {lab=Pbias}
+N 380 -140 380 -130 {lab=vdd}
+N 120 -140 120 -130 {lab=vdd}
+N 210 -100 340 -100 {lab=#net6}
+N 60 -100 120 -100 {lab=vdd}
+N 60 -140 60 -100 {lab=vdd}
+N 60 -140 120 -140 {lab=vdd}
+N 120 -280 120 -140 {lab=vdd}
+N 380 -100 440 -100 {lab=vdd}
+N 440 -140 440 -100 {lab=vdd}
+N 380 -140 440 -140 {lab=vdd}
+N 380 -280 380 -140 {lab=vdd}
+N 300 -170 300 -30 {lab=Pbias}
+N 30 -170 300 -170 {lab=Pbias}
+N 300 -30 380 -30 {lab=Pbias}
+N 380 -70 380 -30 {lab=Pbias}
+N 210 -100 210 -30 {lab=#net6}
+N 160 -100 210 -100 {lab=#net6}
+N 120 -30 210 -30 {lab=#net6}
+N 120 -70 120 -30 {lab=#net6}
+N 120 370 120 390 {lab=vss}
+N 380 370 380 390 {lab=vss}
+N 70 320 120 320 {lab=vss}
+N 70 320 70 370 {lab=vss}
+N 70 370 120 370 {lab=vss}
+N 120 350 120 370 {lab=vss}
+N 380 320 450 320 {lab=vss}
+N 450 320 450 370 {lab=vss}
+N 380 370 450 370 {lab=vss}
+N 380 350 380 370 {lab=vss}
+N 460 -240 460 -170 {lab=Pbias}
+N 300 -170 460 -170 {lab=Pbias}
+N -30 -300 -10 -300 {lab=en_1}
+N 910 -220 910 -190 {lab=vdd}
+N 910 -220 990 -220 {lab=vdd}
+N 910 -270 910 -220 {lab=vdd}
+N 990 -220 990 -160 {lab=vdd}
+N 910 -160 990 -160 {lab=vdd}
+N 910 200 970 200 {lab=vss}
+N 910 230 910 300 {lab=Ibias1}
+N 910 -130 910 170 {lab=#net7}
+N 1200 -220 1200 -190 {lab=vdd}
+N 1200 -220 1280 -220 {lab=vdd}
+N 1200 -270 1200 -220 {lab=vdd}
+N 1280 -220 1280 -160 {lab=vdd}
+N 1200 -160 1280 -160 {lab=vdd}
+N 1140 200 1200 200 {lab=vss}
+N 1200 230 1200 300 {lab=Ibias1}
+N 1200 -130 1200 170 {lab=#net8}
+N 820 -160 870 -160 {lab=Ebias}
+N 1110 -160 1160 -160 {lab=Pbias}
+N 370 610 370 660 {lab=Ebias}
+N 370 720 370 780 {lab=Rgm}
+N 110 780 370 780 {lab=Rgm}
+N 110 720 110 780 {lab=Rgm}
+N 110 780 110 860 {lab=Rgm}
+N 110 590 110 660 {lab=beta}
+N 110 690 160 690 {lab=vss}
+N 300 690 370 690 {lab=vss}
+N 370 610 440 610 {lab=Ebias}
+N 370 590 370 610 {lab=Ebias}
+N 440 560 440 610 {lab=Ebias}
+N 410 560 440 560 {lab=Ebias}
+N 370 470 370 530 {lab=vdd}
+N 320 560 370 560 {lab=vdd}
+N 1060 300 1200 300 {lab=Ibias1}
+N 1060 300 1060 590 {lab=Ibias1}
+N 910 300 1060 300 {lab=Ibias1}
+N 770 590 1060 590 {lab=Ibias1}
+N 1530 -220 1530 -190 {lab=vdd}
+N 1530 -220 1610 -220 {lab=vdd}
+N 1530 -270 1530 -220 {lab=vdd}
+N 1610 -220 1610 -160 {lab=vdd}
+N 1530 -160 1610 -160 {lab=vdd}
+N 1530 200 1590 200 {lab=vss}
+N 1530 230 1530 300 {lab=Ibias2}
+N 1530 -130 1530 170 {lab=#net9}
+N 1820 -220 1820 -190 {lab=vdd}
+N 1820 -220 1900 -220 {lab=vdd}
+N 1820 -270 1820 -220 {lab=vdd}
+N 1900 -220 1900 -160 {lab=vdd}
+N 1820 -160 1900 -160 {lab=vdd}
+N 1760 200 1820 200 {lab=vss}
+N 1820 230 1820 300 {lab=Ibias2}
+N 1820 -130 1820 170 {lab=#net10}
+N 1440 -160 1490 -160 {lab=Ebias}
+N 1730 -160 1780 -160 {lab=Pbias}
+N 1680 300 1820 300 {lab=Ibias2}
+N 1530 300 1680 300 {lab=Ibias2}
+N 770 700 1680 700 {lab=Ibias2}
+N 2180 -220 2180 -190 {lab=vdd}
+N 2180 -220 2260 -220 {lab=vdd}
+N 2180 -270 2180 -220 {lab=vdd}
+N 2260 -220 2260 -160 {lab=vdd}
+N 2180 -160 2260 -160 {lab=vdd}
+N 2180 200 2240 200 {lab=vss}
+N 2180 230 2180 300 {lab=Ibias3}
+N 2180 -130 2180 170 {lab=#net11}
+N 2470 -220 2470 -190 {lab=vdd}
+N 2470 -220 2550 -220 {lab=vdd}
+N 2470 -270 2470 -220 {lab=vdd}
+N 2550 -220 2550 -160 {lab=vdd}
+N 2470 -160 2550 -160 {lab=vdd}
+N 2410 200 2470 200 {lab=vss}
+N 2470 230 2470 300 {lab=Ibias3}
+N 2470 -130 2470 170 {lab=#net12}
+N 2090 -160 2140 -160 {lab=Ebias}
+N 2380 -160 2430 -160 {lab=Pbias}
+N 2320 300 2470 300 {lab=Ibias3}
+N 2840 -220 2840 -190 {lab=vdd}
+N 2840 -220 2920 -220 {lab=vdd}
+N 2840 -270 2840 -220 {lab=vdd}
+N 2920 -220 2920 -160 {lab=vdd}
+N 2840 -160 2920 -160 {lab=vdd}
+N 2840 200 2900 200 {lab=vss}
+N 2840 230 2840 300 {lab=Ibias4}
+N 2840 -130 2840 170 {lab=#net13}
+N 3130 -220 3130 -190 {lab=vdd}
+N 3130 -220 3210 -220 {lab=vdd}
+N 3130 -270 3130 -220 {lab=vdd}
+N 3210 -220 3210 -160 {lab=vdd}
+N 3130 -160 3210 -160 {lab=vdd}
+N 3070 200 3130 200 {lab=vss}
+N 3130 230 3130 300 {lab=Ibias4}
+N 3130 -130 3130 170 {lab=#net14}
+N 2750 -160 2800 -160 {lab=Ebias}
+N 3040 -160 3090 -160 {lab=Pbias}
+N 3000 300 3130 300 {lab=Ibias4}
+N 2180 300 2320 300 {lab=Ibias3}
+N 780 880 2320 880 {lab=Ibias3}
+N 2840 300 3000 300 {lab=Ibias4}
+N 760 1050 3000 1050 {lab=Ibias4}
+N 1680 300 1680 700 {lab=Ibias2}
+N 2320 300 2320 880 {lab=Ibias3}
+N 3000 300 3000 1050 {lab=Ibias4}
+N 270 -560 310 -560 {lab=vss}
+N 270 -560 270 -510 {lab=vss}
+N 270 -510 350 -510 {lab=vss}
+N 350 -530 350 -510 {lab=vss}
+N 350 -510 420 -510 {lab=vss}
+N 420 -560 420 -510 {lab=vss}
+N 350 -560 420 -560 {lab=vss}
+N 420 -640 420 -560 {lab=vss}
+N 350 -640 420 -640 {lab=vss}
+N 350 -640 350 -590 {lab=vss}
+N 670 -620 670 -590 {lab=vdd}
+N 670 -620 750 -620 {lab=vdd}
+N 670 -670 670 -620 {lab=vdd}
+N 750 -620 750 -560 {lab=vdd}
+N 670 -560 750 -560 {lab=vdd}
+N 580 -560 630 -560 {lab=vdd}
+N 580 -560 580 -470 {lab=vdd}
+N 670 -470 750 -470 {lab=vdd}
+N 750 -560 750 -470 {lab=vdd}
+N 670 -530 670 -470 {lab=vdd}
+N 580 -470 670 -470 {lab=vdd}
+N 860 -560 920 -560 {lab=vdd}
+N 960 -620 960 -590 {lab=vdd}
+N 960 -560 1010 -560 {lab=vdd}
+N 1010 -620 1010 -560 {lab=vdd}
+N 960 -620 1010 -620 {lab=vdd}
+N 960 -650 960 -620 {lab=vdd}
+N 960 -530 960 -460 {lab=vdd}
+N 860 -620 860 -560 {lab=vdd}
+N 860 -620 960 -620 {lab=vdd}
+N 860 -560 860 -460 {lab=vdd}
+N 860 -460 960 -460 {lab=vdd}
+N 1190 -610 1190 -580 {lab=vss}
+N 1110 -550 1150 -550 {lab=vss}
+N 1110 -550 1110 -490 {lab=vss}
+N 1190 -490 1250 -490 {lab=vss}
+N 1250 -550 1250 -490 {lab=vss}
+N 1190 -550 1250 -550 {lab=vss}
+N 1190 -520 1190 -490 {lab=vss}
+N 1110 -490 1190 -490 {lab=vss}
+N 1190 -610 1250 -610 {lab=vss}
+N 1190 -630 1190 -610 {lab=vss}
+N 1250 -610 1250 -550 {lab=vss}
+N 1410 -600 1410 -570 {lab=vdd}
+N 1330 -540 1370 -540 {lab=vdd}
+N 1330 -540 1330 -480 {lab=vdd}
+N 1410 -480 1470 -480 {lab=vdd}
+N 1470 -540 1470 -480 {lab=vdd}
+N 1410 -540 1470 -540 {lab=vdd}
+N 1410 -510 1410 -480 {lab=vdd}
+N 1330 -480 1410 -480 {lab=vdd}
+N 1410 -600 1470 -600 {lab=vdd}
+N 1410 -620 1410 -600 {lab=vdd}
+N 1470 -600 1470 -540 {lab=vdd}
+N 1640 -600 1640 -570 {lab=vdd}
+N 1560 -540 1600 -540 {lab=vdd}
+N 1560 -540 1560 -480 {lab=vdd}
+N 1640 -480 1700 -480 {lab=vdd}
+N 1700 -540 1700 -480 {lab=vdd}
+N 1640 -540 1700 -540 {lab=vdd}
+N 1640 -510 1640 -480 {lab=vdd}
+N 1560 -480 1640 -480 {lab=vdd}
+N 1640 -600 1700 -600 {lab=vdd}
+N 1640 -620 1640 -600 {lab=vdd}
+N 1700 -600 1700 -540 {lab=vdd}
+C {sg13g2_pr/sg13_lv_nmos.sym} -580 130 0 1 {name=M12
+l=2u
+w=5u
+ng=1
+m=2
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 20 140 0 1 {name=M2
-W=1.3
-L=5
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_pmos.sym} -580 -180 0 1 {name=M13
+l=10u
+w=0.5u
+ng=1
+m=2
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 270 140 0 1 {name=M3
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} -450 -30 0 0 {name=M1
+l=10u
+w=0.5u
+ng=1
+m=40
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 270 240 0 1 {name=M4
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_pmos.sym} -100 -170 0 1 {name=M2
+l=2u
+w=5u
+ng=1
+m=4
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 230 -10 0 0 {name=M5
-W=10
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} -100 190 0 1 {name=M3
+l=2u
+w=5u
+ng=1
+m=2
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 480 -140 0 0 {name=M6
-W=10
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_pmos.sym} 550 -170 0 0 {name=M4
+l=2u
+w=5u
+ng=1
+m=4
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 480 -60 0 0 {name=M7
-W=10
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} 550 190 0 0 {name=M5
+l=2u
+w=5u
+ng=1
+m=8
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 480 20 0 0 {name=M8
-W=10
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_pmos.sym} 140 -100 0 1 {name=M6
+l=2u
+w=5u
+ng=1
+m=4
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 480 140 0 0 {name=M9
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_pmos.sym} 360 -100 0 0 {name=M7
+l=2u
+w=5u
+ng=1
+m=4
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 480 240 0 0 {name=M10
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} 140 190 0 1 {name=M8
+l=2u
+w=5u
+ng=1
+m=2
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 790 30 0 1 {name=M11
-W=2
-L=5
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} 360 190 0 0 {name=M9
+l=2u
+w=5u
+ng=1
+m=2
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 750 140 0 0 {name=M12
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {lab_pin.sym} -380 -30 0 1 {name=p1 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -370 -120 0 1 {name=p2 sig_type=std_logic lab=Pbias}
+C {lab_pin.sym} -600 -290 0 0 {name=p3 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} -120 -280 0 0 {name=p4 sig_type=std_logic lab=vdd}
+C {sg13g2_pr/sg13_lv_pmos.sym} 10 -300 0 0 {name=M10
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 750 240 0 0 {name=M13
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {lab_pin.sym} 30 -390 0 0 {name=p5 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 570 -280 0 1 {name=p6 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 120 -280 0 1 {name=p7 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 380 -280 0 0 {name=p8 sig_type=std_logic lab=vdd}
+C {sg13g2_pr/sg13_lv_nmos.sym} 140 320 0 1 {name=M11
+l=0.15u
+w=1u
+ng=1
+m=10
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 980 140 0 0 {name=M14
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} 360 320 0 0 {name=M14
+l=0.15u
+w=1u
+ng=1
+m=10
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 980 240 0 0 {name=M15
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {lab_pin.sym} -600 230 0 0 {name=p9 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -120 290 0 0 {name=p10 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 120 390 0 0 {name=p11 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 380 390 0 0 {name=p12 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 160 320 0 1 {name=p14 sig_type=std_logic lab=en_1}
+C {lab_pin.sym} 340 320 0 0 {name=p15 sig_type=std_logic lab=en_1}
+C {lab_pin.sym} 460 -240 0 1 {name=p16 sig_type=std_logic lab=Pbias}
+C {lab_pin.sym} -30 -300 0 0 {name=p17 sig_type=std_logic lab=en_1}
+C {sg13g2_pr/sg13_lv_pmos.sym} 890 -160 0 0 {name=M15
+l=1u
+w=5u
+ng=1
+m=2
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1020 30 0 1 {name=M16
-W=10
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} 890 200 0 0 {name=M16
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1020 -60 0 1 {name=M17
-W=10
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+C {lab_pin.sym} 910 -270 0 1 {name=p18 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 970 200 0 1 {name=p19 sig_type=std_logic lab=vss}
+C {sg13g2_pr/sg13_lv_pmos.sym} 1180 -160 0 0 {name=M17
+l=2u
+w=5u
+ng=1
+m=4
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1210 -60 0 0 {name=M18
-W=10
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} 1220 200 0 1 {name=M18
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1210 30 0 0 {name=M19
-W=10
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
+C {lab_pin.sym} 1200 -270 0 1 {name=p20 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1140 200 0 0 {name=p21 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 820 -160 0 0 {name=p22 sig_type=std_logic lab=Ebias}
+C {lab_pin.sym} 1110 -160 0 0 {name=p23 sig_type=std_logic lab=Pbias}
+C {sg13g2_pr/sg13_lv_pmos.sym} 390 560 0 1 {name=M19
+l=1u
+w=5u
+ng=1
+m=2
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 110 0 1 {name=M20
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} 90 690 0 0 {name=M20
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 1290 200 0 1 {name=M21
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {sg13g2_pr/sg13_lv_nmos.sym} 390 690 0 1 {name=M21
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 1210 290 0 0 {name=M22
-W=5
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+C {lab_pin.sym} 160 690 0 1 {name=p24 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 300 690 0 0 {name=p25 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 370 470 0 0 {name=p26 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 320 560 0 0 {name=p27 sig_type=std_logic lab=vdd}
+C {sg13g2_pr/sg13_lv_pmos.sym} 1510 -160 0 0 {name=M22
+l=1u
+w=5u
+ng=1
+m=2
+model=sg13_lv_pmos
 spiceprefix=X
 }
-C {lab_pin.sym} 0 250 0 0 {name=p1 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 250 340 0 0 {name=p2 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 0 -100 0 0 {name=p3 sig_type=std_logic lab=Vdd}
-C {lab_pin.sym} 810 430 0 1 {name=p4 sig_type=std_logic lab=Vbiasp}
-C {lab_pin.sym} -40 -10 0 0 {name=p5 sig_type=std_logic lab=Vbiasp}
-C {lab_pin.sym} 210 -10 0 0 {name=p6 sig_type=std_logic lab=Vbiasp}
-C {lab_pin.sym} 250 -100 0 0 {name=p7 sig_type=std_logic lab=Vdd}
-C {lab_pin.sym} 190 240 0 0 {name=p8 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 190 140 0 0 {name=p9 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 500 340 0 0 {name=p12 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 500 -200 0 0 {name=p13 sig_type=std_logic lab=Vdd}
-C {lab_pin.sym} 570 -60 0 1 {name=p14 sig_type=std_logic lab=Vdd}
-C {lab_pin.sym} 570 20 0 1 {name=p15 sig_type=std_logic lab=Vdd}
-C {lab_pin.sym} 140 190 0 0 {name=p16 sig_type=std_logic lab=Vlow}
-C {lab_pin.sym} 550 90 0 1 {name=p17 sig_type=std_logic lab=Vpcas}
-C {devices/lab_wire.sym} 380 140 0 1 {name=l11 sig_type=std_logic lab=Vbias3}
-C {devices/lab_wire.sym} 70 80 0 1 {name=l1 sig_type=std_logic lab=Vbias3}
-C {devices/lab_wire.sym} 380 240 0 1 {name=l2 sig_type=std_logic lab=Vbias4}
-C {lab_pin.sym} 770 340 0 0 {name=p18 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 700 30 0 0 {name=p21 sig_type=std_logic lab=Vdd}
-C {lab_pin.sym} 770 -40 0 0 {name=p22 sig_type=std_logic lab=Vdd}
-C {devices/lab_wire.sym} 730 240 0 0 {name=l3 sig_type=std_logic lab=Vbias4}
-C {devices/lab_wire.sym} 730 140 0 0 {name=l4 sig_type=std_logic lab=Vbias3}
-C {lab_pin.sym} 1000 -140 0 0 {name=p23 sig_type=std_logic lab=Vdd}
-C {lab_pin.sym} 1000 340 0 0 {name=p24 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 1230 350 0 0 {name=p10 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 1220 200 0 0 {name=p11 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 1220 110 0 0 {name=p19 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} 1230 -130 0 0 {name=p20 sig_type=std_logic lab=Vdd}
-C {devices/lab_wire.sym} 960 140 0 0 {name=l5 sig_type=std_logic lab=Vbias3}
-C {devices/lab_wire.sym} 960 240 0 0 {name=l6 sig_type=std_logic lab=Vbias4}
-C {devices/lab_wire.sym} 1310 200 0 1 {name=l7 sig_type=std_logic lab=Vbias3}
-C {lab_pin.sym} 1320 80 0 1 {name=p25 sig_type=std_logic lab=Vncas}
-C {lab_pin.sym} 1130 -10 0 1 {name=p26 sig_type=std_logic lab=Vhigh}
-C {devices/lab_wire.sym} 1110 -60 0 1 {name=l8 sig_type=std_logic lab=Vbias1}
-C {devices/lab_wire.sym} 1110 30 0 1 {name=l9 sig_type=std_logic lab=Vbias2}
-C {lab_pin.sym} 810 450 0 1 {name=p27 sig_type=std_logic lab=Vbiasn}
-C {lab_pin.sym} 510 430 0 0 {name=p28 sig_type=std_logic lab=Rgm}
-C {lab_pin.sym} 510 470 0 0 {name=p29 sig_type=std_logic lab=Vss}
-C {title.sym} 150 540 0 0 {name=l10 author="Lohan Atapattu"}
-C {ipin.sym} 380 -340 0 0 {name=p30 lab=Vdd}
-C {opin.sym} 480 -340 0 0 {name=p31 lab=Vbiasp}
-C {ipin.sym} 380 -300 0 0 {name=p32 lab=Vss}
-C {opin.sym} 480 -300 0 0 {name=p33 lab=Vbiasn}
-C {opin.sym} 650 -380 0 0 {name=p34 lab=Vbias1}
-C {opin.sym} 650 -340 0 0 {name=p35 lab=Vbias2}
-C {opin.sym} 650 -300 0 0 {name=p36 lab=Vbias3}
-C {opin.sym} 650 -260 0 0 {name=p37 lab=Vbias4}
-C {opin.sym} 910 -280 0 0 {name=p38 lab=Vpcas}
-C {opin.sym} 800 -300 0 0 {name=p39 lab=Vlow}
-C {opin.sym} 910 -360 0 0 {name=p40 lab=Vncas}
-C {opin.sym} 800 -330 0 0 {name=p41 lab=Vhigh}
-C {devices/lab_wire.sym} 850 30 0 1 {name=l12 sig_type=std_logic lab=Vbias2}
-C {devices/lab_wire.sym} 460 -60 0 0 {name=l13 sig_type=std_logic lab=Vbias2}
-C {ipin.sym} 380 -380 0 0 {name=p42 lab=Rgm}
-C {lab_pin.sym} 510 450 0 0 {name=p43 sig_type=std_logic lab=Vdd}
-C {ngspice_get_value.sym} -50 50 0 0 {name=r6 node=v(@m.$\{path\}xm1.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {sg13g2_pr/sg13_lv_nmos.sym} 1510 200 0 0 {name=M23
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 10 200 0 0 {name=r1 node=v(@m.$\{path\}xm2.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 1530 -270 0 1 {name=p28 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1590 200 0 1 {name=p29 sig_type=std_logic lab=vss}
+C {sg13g2_pr/sg13_lv_pmos.sym} 1800 -160 0 0 {name=M24
+l=2u
+w=5u
+ng=1
+m=4
+model=sg13_lv_pmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 200 50 0 0 {name=r2 node=v(@m.$\{path\}xm5.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {sg13g2_pr/sg13_lv_nmos.sym} 1840 200 0 1 {name=M25
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 260 200 0 0 {name=r3 node=v(@m.$\{path\}xm3.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 1820 -270 0 1 {name=p30 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1760 200 0 0 {name=p31 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 1440 -160 0 0 {name=p32 sig_type=std_logic lab=Ebias}
+C {lab_pin.sym} 1730 -160 0 0 {name=p33 sig_type=std_logic lab=Pbias}
+C {sg13g2_pr/sg13_lv_pmos.sym} 2160 -160 0 0 {name=M26
+l=1u
+w=5u
+ng=1
+m=2
+model=sg13_lv_pmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 260 300 0 0 {name=r4 node=v(@m.$\{path\}xm4.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {sg13g2_pr/sg13_lv_nmos.sym} 2160 200 0 0 {name=M27
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 450 300 0 0 {name=r5 node=v(@m.$\{path\}xm10.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 2180 -270 0 1 {name=p34 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 2240 200 0 1 {name=p35 sig_type=std_logic lab=vss}
+C {sg13g2_pr/sg13_lv_pmos.sym} 2450 -160 0 0 {name=M28
+l=2u
+w=5u
+ng=1
+m=4
+model=sg13_lv_pmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 450 200 0 0 {name=r7 node=v(@m.$\{path\}xm9.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {sg13g2_pr/sg13_lv_nmos.sym} 2490 200 0 1 {name=M29
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 510 80 0 0 {name=r8 node=v(@m.$\{path\}xm8.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 2470 -270 0 1 {name=p36 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 2410 200 0 0 {name=p37 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 2090 -160 0 0 {name=p38 sig_type=std_logic lab=Ebias}
+C {lab_pin.sym} 2380 -160 0 0 {name=p39 sig_type=std_logic lab=Pbias}
+C {sg13g2_pr/sg13_lv_pmos.sym} 2820 -160 0 0 {name=M30
+l=1u
+w=5u
+ng=1
+m=2
+model=sg13_lv_pmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 570 -20 0 0 {name=r9 node=v(@m.$\{path\}xm7.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {sg13g2_pr/sg13_lv_nmos.sym} 2820 200 0 0 {name=M31
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 540 -180 0 0 {name=r10 node=v(@m.$\{path\}xm6.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 2840 -270 0 1 {name=p40 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 2900 200 0 1 {name=p41 sig_type=std_logic lab=vss}
+C {sg13g2_pr/sg13_lv_pmos.sym} 3110 -160 0 0 {name=M32
+l=2u
+w=5u
+ng=1
+m=4
+model=sg13_lv_pmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 710 90 0 0 {name=r11 node=v(@m.$\{path\}xm11.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {sg13g2_pr/sg13_lv_nmos.sym} 3150 200 0 1 {name=M33
+l=0.15u
+w=1u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 710 190 0 0 {name=r12 node=v(@m.$\{path\}xm12.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 3130 -270 0 1 {name=p42 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 3070 200 0 0 {name=p43 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 2750 -160 0 0 {name=p44 sig_type=std_logic lab=Ebias}
+C {lab_pin.sym} 3040 -160 0 0 {name=p45 sig_type=std_logic lab=Pbias}
+C {lab_pin.sym} 110 860 1 1 {name=p46 sig_type=std_logic lab=Rgm}
+C {lab_pin.sym} 110 590 0 0 {name=p47 sig_type=std_logic lab=beta}
+C {lab_pin.sym} 440 560 0 1 {name=p48 sig_type=std_logic lab=Ebias}
+C {lab_pin.sym} 410 690 0 1 {name=p49 sig_type=std_logic lab=en_2}
+C {lab_pin.sym} 770 590 0 0 {name=p50 sig_type=std_logic lab=Ibias1
 }
-C {ngspice_get_value.sym} 710 300 0 0 {name=r13 node=v(@m.$\{path\}xm13.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 770 700 0 0 {name=p51 sig_type=std_logic lab=Ibias2
 }
-C {ngspice_get_value.sym} 1010 -90 0 0 {name=r14 node=v(@m.$\{path\}xm17.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 780 880 0 0 {name=p52 sig_type=std_logic lab=Ibias3
 }
-C {ngspice_get_value.sym} 940 90 0 0 {name=r15 node=v(@m.$\{path\}xm16.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 760 1050 0 0 {name=p53 sig_type=std_logic lab=Ibias4
 }
-C {ngspice_get_value.sym} 940 200 0 0 {name=r16 node=v(@m.$\{path\}xm14.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {iopin.sym} -1100 -190 0 0 {name=p54 lab=en_1
 }
-C {ngspice_get_value.sym} 930 300 0 0 {name=r17 node=v(@m.$\{path\}xm15.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {iopin.sym} -1100 -150 0 0 {name=p55 lab=en_2}
+C {iopin.sym} -1100 -110 0 0 {name=p56 lab=Rgm}
+C {iopin.sym} -1000 -170 0 0 {name=p57 lab=vdd}
+C {iopin.sym} -1000 -130 0 0 {name=p58 lab=vss}
+C {iopin.sym} -920 -210 0 0 {name=p59 lab=Ibias1
 }
-C {ngspice_get_value.sym} 1170 -90 0 0 {name=r18 node=v(@m.$\{path\}xm18.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {iopin.sym} -920 -170 0 0 {name=p60 lab=Ibias2}
+C {iopin.sym} -920 -130 0 0 {name=p61 lab=Ibias3}
+C {iopin.sym} -920 -90 0 0 {name=p62 lab=Ibias4}
+C {title.sym} 70 1330 0 0 {name=l8 author="Lohan Atapattu"}
+C {lab_pin.sym} 570 290 0 0 {name=p13 sig_type=std_logic lab=beta}
+C {lab_pin.sym} 70 690 0 0 {name=p63 sig_type=std_logic lab=en_1}
+C {lab_pin.sym} 870 200 0 0 {name=p64 sig_type=std_logic lab=en_2}
+C {lab_pin.sym} 1240 200 0 1 {name=p65 sig_type=std_logic lab=en_1}
+C {lab_pin.sym} 1490 200 0 0 {name=p66 sig_type=std_logic lab=en_2}
+C {lab_pin.sym} 1860 200 0 1 {name=p67 sig_type=std_logic lab=en_1}
+C {lab_pin.sym} 2140 200 0 0 {name=p68 sig_type=std_logic lab=en_2}
+C {lab_pin.sym} 2510 200 0 1 {name=p69 sig_type=std_logic lab=en_1}
+C {lab_pin.sym} 2800 200 0 0 {name=p70 sig_type=std_logic lab=en_2}
+C {lab_pin.sym} 3170 200 0 1 {name=p71 sig_type=std_logic lab=en_1}
+C {sg13g2_pr/sg13_lv_nmos.sym} 330 -560 0 0 {name=M34
+l=2u
+w=5u
+ng=1
+m=20
+model=sg13_lv_nmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 1300 60 0 0 {name=r19 node=v(@m.$\{path\}xm19.msky130_fd_pr__pfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 270 -510 0 0 {name=p72 sig_type=std_logic lab=vss
 }
-C {ngspice_get_value.sym} 1310 140 0 0 {name=r20 node=v(@m.$\{path\}xm20.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {sg13g2_pr/sg13_lv_pmos.sym} 650 -560 0 0 {name=M35
+l=2u
+w=5u
+ng=1
+m=24
+model=sg13_lv_pmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 1280 260 0 0 {name=r21 node=v(@m.$\{path\}xm21.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 670 -670 0 1 {name=p73 sig_type=std_logic lab=vdd}
+C {sg13g2_pr/sg13_lv_pmos.sym} 940 -560 0 0 {name=M36
+l=1u
+w=5u
+ng=1
+m=18
+model=sg13_lv_pmos
+spiceprefix=X
 }
-C {ngspice_get_value.sym} 1260 350 0 0 {name=r22 node=v(@m.$\{path\}xm22.msky130_fd_pr__nfet_01v8_lvt[vth])
-descr="vth="
-
-
+C {lab_pin.sym} 960 -650 0 0 {name=p74 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1190 -630 0 0 {name=p75 sig_type=std_logic lab=vss}
+C {sg13g2_pr/sg13_lv_nmos.sym} 1170 -550 0 0 {name=M37
+l=10u
+w=0.5u
+ng=1
+m=32
+model=sg13_lv_nmos
+spiceprefix=X
 }
-C {/foss/designs/FYP/Sky130_Design/Opamp_Design/src/Beta_Multiplier.sym} 660 450 0 0 {name=x1}
+C {sg13g2_pr/sg13_lv_pmos.sym} 1390 -540 0 0 {name=M38
+l=2u
+w=5u
+ng=1
+m=16
+model=sg13_lv_pmos
+spiceprefix=X
+}
+C {lab_pin.sym} 1410 -620 0 0 {name=p76 sig_type=std_logic lab=vdd}
+C {sg13g2_pr/sg13_lv_pmos.sym} 1620 -540 0 0 {name=M39
+l=10u
+w=0.5u
+ng=1
+m=10
+model=sg13_lv_pmos
+spiceprefix=X
+}
+C {lab_pin.sym} 1640 -620 0 0 {name=p77 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 70 190 0 0 {name=p78 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 430 190 0 1 {name=p79 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 630 190 0 1 {name=p80 sig_type=std_logic lab=vss}
