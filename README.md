@@ -1,116 +1,246 @@
-![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
+# CMOS ASIC for Simultaneous Electrode–Skin Impedance Measurement
 
-# CMOS ASIC for Simultaneous Electrode-Skin Impedance Measurement 
+- [Read the documentation for the project](docs/info.md)
 
-- [Read the documentation for project](docs/info.md)
+---
 
-## What are Motion Artifacts?
+# Project Overview
 
-unwanted, nonstationary distortions that contaminate bio-signals due to movement of the subject or electrodes during recording
+Bio-signal acquisition systems such as **EEG, ECG, and EMG** often suffer from **motion artifacts**, which degrade the quality of the recorded signals. Motion artifacts occur when there is **relative movement between the electrode and the skin**, causing variations in the **skin–electrode impedance**.
 
-## Remove motion artifacts using impedance measurement 
+These impedance variations introduce **non-stationary distortions** into the recorded signal, which significantly affect downstream signal processing and analysis.
 
-There are various methods to remove motion artifacts. In this project, we expect to use adaptive filtering techniques, providing the skin–electrode impedance signal as a reference to filter out motion artifacts.
+This project focuses on designing a **CMOS Application-Specific Integrated Circuit (ASIC)** capable of **simultaneously measuring electrode–skin impedance** while recording physiological signals. The measured impedance signal can then be used as a **reference input for adaptive filtering techniques** to suppress motion artifacts in EEG recordings.
 
-## Impedance mesuremnt ASIC
+---
 
-In this project, we will design and tape out an application-specific integrated circuit (ASIC) to obtain the in-phase and quadrature (I/Q) components of the skin–electrode impedance signal, stimulated by a body signal, while using the EEG signal as the input. The ASIC consists of two fully differential operational amplifiers for implementing an active RC band-pass filter, along with two fully differential multipliers.
+# What are Motion Artifacts?
 
-![Impedance mesuremnt ASIC](/docs/Our_approach.png)
+Motion artifacts are **unwanted, non-stationary distortions** that contaminate bio-signals due to:
 
-## Project Phases  
+- Movement of the subject
+- Movement or displacement of electrodes
+- Variations in the skin–electrode contact impedance
 
-### Phase 01 – Design and Tapeout of a Fully Differential Operational Amplifier  
-In the first phase of the project, we will design a **fully differential operational amplifier (op-amp)**.  
-This op-amp will serve as a fundamental building block that can be reused across all modules of the ASIC.  
-The design and simulations will be carried out using the **Sky130 PDK**. We have already completed this phase of the project. Github link :- https://github.com/LohanAtapattu/ttsky25_EpitaXC
+These artifacts often overlap with the frequency range of physiological signals, making them difficult to remove using conventional filtering techniques.
 
-### Phase 02 – Design and Layout of the Fully Differencial multiplier for signal multiplication.
-As the first phase of the project, we will design a **fully differential multiplier**.  op-amp serve as a fundamental building block for the multiplier and simulations and layout completed using ihp13g2 pdk. Expecting to tapeout using Unic Cass 2026 iteration.
+---
 
-### Phase 03 – Design and Layout of the ASIC for Impedance Measurement  
-In the third phase, we will design the complete ASIC for **impedance measurement**.  
-The chip will integrate:  
-- two fully differential op-amps  
-- two fully differential multipliers  
+# Removing Motion Artifacts Using Impedance Measurement
 
-The design and layout will be implemented using the **Sky130 PDK** with candence tools.
+Several methods exist to reduce motion artifacts in bio-signal acquisition systems. In this project, we utilize **skin–electrode impedance monitoring** as a reference signal.
 
-#### Phase 02 – Design and Implementation of Fully Differential Multiplier 
+The approach is as follows:
 
-##### Specifications for fully differencial operational amplifier
+1. Inject a small **stimulation signal** into the electrode interface.
+2. Measure the **in-phase (I)** and **quadrature (Q)** components of the impedance.
+3. Use the measured impedance signal as a **reference input to an adaptive filter**.
+4. Remove motion artifacts from the EEG signal through adaptive filtering.
 
-| Parameter                               | Value 1 | Value 2 | Value 3 |
-|-----------------------------------------|---------|---------|---------|
-| **Supply Voltage (Design Input)**       | 1.7 V   | 1.8 V   | 1.9 V   |
-| **Common Mode Voltage (Design Input)**  | 0.85 V  | 0.9 V   | 0.95 V  |
-| **Common Mode Voltage (Design Output)** | 0.85 V  | 0.9 V   | 0.95 V  |
-| **Temperature (Design Input)**          | 20 °C   | –       | 50 °C   |
-| **PSRR**                                | 170 dB  | 180 dB  | 190 dB  |
-| **CMRR**                                | 230 dB  | 250 dB  | 270 dB  |
-| **Phase Margin**                        | 50°     | 60°     | 70°     |
-| **Gain Bandwidth Product**              | 800 kHz | 1 MHz   | 1.2 MHz |
-| **Open Loop (low-freq) DC Gain**        | 80 dB   | 100 dB  | 120 dB  |
+---
 
+# Impedance Measurement ASIC
 
-#### Project Architecture  
+The proposed ASIC measures the **in-phase and quadrature components of the electrode–skin impedance** while recording EEG signals.
 
-We expect to design a **two-stage operational amplifier** with a **common-source stage** as second stage for gain enhancement.  
-For each stage, a **common-mode feedback (CMFB) circuit** is used to ensure stability and maintain the desired common-mode voltage throughout the design. For the multiplication we expect to use the four mosfet based architecture as in the below figure 
+The architecture consists of:
 
-![Multiplier_Architecture](docs/Multiplier.jpeg)
+- Fully differential operational amplifiers
+- Fully differential multipliers
+- Active RC band-pass filters
 
-below is the block diagram and connections of the operational amplifier in Xschem 
-![Operational_Amplifier](docs/Operational_amplifier.png)
+These blocks allow extraction of impedance information from the electrode interface while maintaining **low noise and high signal fidelity**.
 
-##### Biasing Circuit  
+![Impedance Measurement ASIC](docs/Our_approach.png)
 
-We have employed a **beta-multiplier based biasing circuit** design with a **startup circuit**, as shown below:  
+---
+
+# Project Phases
+
+The project is divided into **three major phases**.
+
+---
+
+# Phase 01 – Design and Tapeout of a Fully Differential Operational Amplifier
+
+In the first phase, we designed a **fully differential operational amplifier (Op-Amp)** which serves as the **fundamental building block** for the ASIC.
+
+This amplifier is reused in multiple modules including:
+
+- Active filters
+- Multipliers
+- Signal conditioning stages
+
+### Key Features
+
+- Designed using the **Sky130 PDK**
+- Fully differential architecture
+- Includes **common-mode feedback (CMFB)** circuits
+- Optimized for **low-frequency biomedical signal processing**
+
+The design and simulations were completed successfully and the chip was **submitted for tapeout**.
+
+Github Repository:
+
+https://github.com/LohanAtapattu/ttsky25_EpitaXC
+
+---
+
+# Phase 02 – Fully Differential Multiplier Design and Layout
+
+In the **second phase**, we focus on designing a **fully differential multiplier** optimized for:
+
+- **Low-frequency biomedical signals**
+- **Low power consumption**
+- **High linearity**
+
+The multiplier is required to extract the **I/Q components of the impedance signal**.
+
+### Multiplier Architecture
+
+The multiplier uses:
+
+- A **four-MOSFET based multiplication core**
+- A **fully differential operational amplifier**
+
+This architecture provides:
+
+- High linearity
+- Efficient signal multiplication
+- Low distortion
+
+![Multiplier Architecture](docs/Multiplier.jpeg)
+
+The design and layout are implemented using the **IHP 130nm BiCMOS (ihp13g2) PDK**.
+
+This repository contains the **layout and verification files** intended for **tapeout submission through the UNIC-CASS 2026 program**.
+
+---
+
+# Phase 03 – Complete ASIC for Impedance Measurement
+
+In the final phase, all designed building blocks will be integrated into a **single ASIC**.
+
+The complete chip will include:
+
+- **Two fully differential operational amplifiers**
+- **Two fully differential multipliers**
+- **Two-stage active RC band-pass filter**
+
+The goal is to extract the **impedance mismatch signal** generated due to electrode motion.
+
+The complete ASIC will be:
+
+- Simulated using the **Sky130 PDK**
+- Implemented with **full layout design**
+- Verified using **Cadence design tools**
+
+---
+
+# Operational Amplifier Architecture
+
+The operational amplifier follows a **two-stage architecture**:
+
+1. **Folded Cascode Amplifier** (First Stage)
+2. **Common Source Gain Stage** (Second Stage)
+
+This architecture enables:
+
+- High gain
+- Improved phase margin
+- Low noise performance
+- Suitability for low-frequency biomedical applications
+
+---
+
+# Biasing Circuit
+
+A **beta-multiplier reference bias circuit** is used to generate stable bias currents.
+
+The biasing system includes:
+
+- Beta multiplier current reference
+- Startup circuit
+- Bias distribution network
+
+This ensures **stable operation across process and temperature variations**.
 
 ![Beta Multiplier Biasing Circuit](docs/Biasing_circuit.png)
 
-##### Operational Amplifier  
+---
 
-For the operational amplifier stage, we have employed a **folded cascode architecture**.  
-Additionally, a **single-ended differential amplifier based common-mode feedback (CMFB) circuit** is used to maintain the common-mode voltage at a fixed reference level.  
+# Folded Cascode Operational Amplifier
 
-![Folded Cascode Amplifier Architecture](docs/folded_cascode_opamp.png)
+The first stage uses a **folded cascode topology**, chosen for its:
 
-##### Common Source Stage  
+- High gain
+- High output impedance
+- Good bandwidth characteristics
 
-For the common source stage, we have used a **resistor-based common-mode feedback (CMFB) topology** to stabilize the output common-mode voltage.  
+A **single-ended differential amplifier based CMFB circuit** regulates the output common-mode voltage.
 
-![Common Source Stage with CMFB](docs/Common_source_stage.png)
+![Folded Cascode Amplifier](docs/folded_cascode_opamp.png)
 
-#### Simulations  
+---
 
-For the simulations, we have used the following testbench setup:  
+# Common Source Gain Stage
+
+The second stage is a **common source amplifier** used for gain enhancement.
+
+A **resistor-based CMFB topology** is used to stabilize the output common-mode voltage.
+
+![Common Source Stage](docs/Common_source_stage.png)
+
+---
+
+# Operational Amplifier Specifications
+
+| Parameter | Value 1 | Value 2 | Value 3 |
+|---|---|---|---|
+| Supply Voltage | 1.7 V | 1.8 V | 1.9 V |
+| Input Common Mode Voltage | 0.85 V | 0.9 V | 0.95 V |
+| Output Common Mode Voltage | 0.85 V | 0.9 V | 0.95 V |
+| Temperature | 20°C | – | 50°C |
+| PSRR | 170 dB | 180 dB | 190 dB |
+| CMRR | 230 dB | 250 dB | 270 dB |
+| Phase Margin | 50° | 60° | 70° |
+| Gain Bandwidth Product | 800 kHz | 1 MHz | 1.2 MHz |
+| Open Loop DC Gain | 80 dB | 100 dB | 120 dB |
+
+---
+
+# Simulation Setup
+
+The following testbench was used for circuit simulations:
 
 ![Simulation Testbench](docs/simulation_testbench.png)
 
+---
 
-##### Fully Differential Amplifier  
+# Fully Differential Multiplier
 
-The fully differential amplifier design is the same as described above.  
+The multiplier is implemented using a **fully differential operational amplifier-based topology** combined with a **four-MOSFET multiplication core**.
 
-##### Fully Differential Multiplier  
-
-For the **fully differential multiplier** design, we have employed a **fully differential operational amplifier-based topology**, as shown below:  
-g
 ![Fully Differential Multiplier](docs/Multiplier.jpeg)
 
-##### Simulations  
+---
 
-###### Linearity  
+# Linearity Simulation
 
-The **linearity** of the circuit was tested, and the results are shown below:  
+To evaluate the performance of the multiplier, **linearity testing** was performed using the following testbench.
 
-![Linearity Test_bench](docs/fully_differencial_multiplier.png)
+### Linearity Testbench
 
-Above is the linearity testbench for the multiplier
+![Linearity Testbench](docs/fully_differencial_multiplier.png)
 
-![Linearity Test_results](docs/linearity_test_results.png)
- 
+### Linearity Results
 
+![Linearity Results](docs/linearity_test_results.png)
 
+---
 
+# Final Objective
+
+The final objective of this project is to develop a **low-power CMOS ASIC capable of simultaneously measuring electrode–skin impedance during EEG acquisition**.
+
+The extracted impedance signal will enable **adaptive filtering techniques to remove motion artifacts**, improving the quality and reliability of biomedical signal acquisition systems.
