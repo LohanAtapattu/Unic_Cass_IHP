@@ -1,0 +1,77 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1772872455
+<< error_p >>
+rect -28 105 28 114
+rect -28 65 -20 105
+rect -28 56 28 65
+rect -108 -73 -68 35
+rect 68 -73 108 35
+<< pwell >>
+rect -144 -105 144 67
+<< nmos >>
+rect -50 -79 50 41
+<< ndiff >>
+rect -118 -3 -50 41
+rect -118 -35 -104 -3
+rect -72 -35 -50 -3
+rect -118 -79 -50 -35
+rect 50 -3 118 41
+rect 50 -35 72 -3
+rect 104 -35 118 -3
+rect 50 -79 118 -35
+<< ndiffc >>
+rect -104 -35 -72 -3
+rect 72 -35 104 -3
+<< poly >>
+rect -50 101 50 115
+rect -50 69 -16 101
+rect 16 69 50 101
+rect -50 41 50 69
+rect -50 -115 50 -79
+<< polycont >>
+rect -16 69 16 101
+<< metal1 >>
+rect -43 105 43 106
+rect -43 65 -20 105
+rect 20 65 43 105
+rect -43 64 43 65
+rect -118 1 -58 27
+rect -118 -39 -108 1
+rect -68 -39 -58 1
+rect -118 -65 -58 -39
+rect 58 1 118 27
+rect 58 -39 68 1
+rect 108 -39 118 1
+rect 58 -65 118 -39
+<< via1 >>
+rect -20 101 20 105
+rect -20 69 -16 101
+rect -16 69 16 101
+rect 16 69 20 101
+rect -20 65 20 69
+rect -108 -3 -68 1
+rect -108 -35 -104 -3
+rect -104 -35 -72 -3
+rect -72 -35 -68 -3
+rect -108 -39 -68 -35
+rect 68 -3 108 1
+rect 68 -35 72 -3
+rect 72 -35 104 -3
+rect 104 -35 108 -3
+rect 68 -39 108 -35
+<< metal2 >>
+rect -28 105 28 114
+rect -28 65 -20 105
+rect 20 65 28 105
+rect -28 56 28 65
+rect -108 1 -68 35
+rect -108 -73 -68 -39
+rect 68 1 108 35
+rect 68 -73 108 -39
+<< labels >>
+rlabel metal1 s -88 -19 -88 -19 4 D
+rlabel metal1 s 88 -19 88 -19 4 S
+rlabel metal1 s 0 85 0 85 4 G
+<< end >>
