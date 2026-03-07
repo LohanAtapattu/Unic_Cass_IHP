@@ -238,6 +238,32 @@ To evaluate the performance of the multiplier, **linearity testing** was perform
 
 ---
 
+# Layout
+
+Below is the **final completed layout** of the designed circuit.
+
+![Layout](docs/layout.jpeg)
+
+---
+
+## DRC and LVS Verification
+
+The layout verification was performed using **KLayout** to ensure the design satisfies all **design rule checks (DRC)** and **layout-versus-schematic (LVS)** requirements.
+
+### LVS Check
+
+The **Layout Versus Schematic (LVS)** verification confirms that the implemented layout matches the original schematic design.
+
+![LVS Check](docs/LVS%20check.jpeg)
+
+### DRC Check
+
+The **Design Rule Check (DRC)** verifies that the layout follows all the design rules defined by the PDK.
+
+![DRC Check](docs/DRC_check.jpeg)
+
+![DRC Check](docs/DRC_check_2.jpeg)
+
 # Final Objective
 
 The final objective of this project is to develop a **low-power CMOS ASIC capable of simultaneously measuring electrode–skin impedance during EEG acquisition**.
