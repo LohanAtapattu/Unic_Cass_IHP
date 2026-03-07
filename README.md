@@ -174,8 +174,7 @@ This ensures **stable operation across process and temperature variations**.
 The first stage uses a **folded cascode topology**, chosen for its:
 
 - High gain
-- High output impedance
-- Good bandwidth characteristics
+- Good voltage swing
 
 A **single-ended differential amplifier based CMFB circuit** regulates the output common-mode voltage.
 
@@ -197,9 +196,9 @@ A **resistor-based CMFB topology** is used to stabilize the output common-mode v
 
 | Parameter | Value 1 | Value 2 | Value 3 |
 |---|---|---|---|
-| Supply Voltage | 1.7 V | 1.8 V | 1.9 V |
-| Input Common Mode Voltage | 0.85 V | 0.9 V | 0.95 V |
-| Output Common Mode Voltage | 0.85 V | 0.9 V | 0.95 V |
+| Supply Voltage | 1.1 V | 1.2 V | 1.3 V |
+| Input Common Mode Voltage | 0.55 V | 0.6 V | 0.65 V |
+| Output Common Mode Voltage | 0.55 V | 0.6 V | 0.65 V |
 | Temperature | 20°C | – | 50°C |
 | PSRR | 170 dB | 180 dB | 190 dB |
 | CMRR | 230 dB | 250 dB | 270 dB |
@@ -211,7 +210,7 @@ A **resistor-based CMFB topology** is used to stabilize the output common-mode v
 
 # Simulation Setup
 
-The following testbench was used for circuit simulations:
+The following testbench was used for operational amplifier circuit simulations:
 
 ![Simulation Testbench](docs/simulation_testbench.png)
 
