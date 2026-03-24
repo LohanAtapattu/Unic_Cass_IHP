@@ -100,13 +100,11 @@ N 500 -100 500 80 {lab=vom}
 N 780 -100 780 80 {lab=vop}
 N 1240 -290 1240 -170 {lab=#net2}
 N 1710 -110 1710 -20 {lab=vout}
-N 290 -640 420 -640 {lab=vss}
 N 180 -640 180 -610 {lab=vss}
 N 70 -640 180 -640 {lab=vss}
 N 70 -640 70 -610 {lab=vss}
 N 30 -640 70 -640 {lab=vss}
-N 290 -640 290 -610 {lab=vss}
-N 180 -640 290 -640 {lab=vss}
+N 180 -640 420 -640 {lab=vss}
 N 420 -640 420 -580 {lab=vss}
 N 20 -610 30 -610 {lab=vss}
 N 20 -610 20 -580 {lab=vss}
@@ -114,12 +112,9 @@ N 370 -580 420 -580 {lab=vss}
 N 120 -610 140 -610 {lab=vss}
 N 120 -610 120 -580 {lab=vss}
 N 20 -580 120 -580 {lab=vss}
-N 240 -610 250 -610 {lab=vss}
-N 240 -610 240 -580 {lab=vss}
-N 120 -580 240 -580 {lab=vss}
+N 120 -580 370 -580 {lab=vss}
 N 370 -610 380 -610 {lab=vss}
 N 370 -610 370 -580 {lab=vss}
-N 240 -580 370 -580 {lab=vss}
 N 870 -680 870 -620 {lab=vdd}
 N 830 -620 870 -620 {lab=vdd}
 N 830 -620 830 -590 {lab=vdd}
@@ -151,7 +146,10 @@ N 1060 -590 1060 -570 {lab=vss}
 N 1060 -590 1120 -590 {lab=vss}
 N 1120 -590 1120 -570 {lab=vss}
 N 1120 -570 1150 -570 {lab=vss}
-N 1020 -130 1020 -70 {lab=vcm}
+N 1000 -90 1000 -70 {lab=vss}
+N 900 -90 1000 -90 {lab=vss}
+N 1000 -100 1000 -90 {lab=vss}
+N 1020 -100 1020 -70 {lab=vcm}
 C {sg13g2_pr/sg13_lv_pmos.sym} 120 -80 0 1 {name=M20
 l=5u
 w=1u
@@ -302,14 +300,6 @@ model=sg13_lv_nmos
 spiceprefix=X
 }
 C {lab_pin.sym} 420 -580 0 1 {name=p30 sig_type=std_logic lab=vss}
-C {sg13g2_pr/sg13_lv_nmos.sym} 270 -610 0 1 {name=M12
-l=10u
-w=0.25u
-ng=1
-m=4
-model=sg13_lv_nmos
-spiceprefix=X
-}
 C {sg13g2_pr/sg13_lv_nmos.sym} 50 -610 0 1 {name=M13
 l=1u
 w=0.25u
@@ -375,9 +365,10 @@ l=2.0e-6
 m=10
 spiceprefix=X}
 C {lab_pin.sym} 1150 -570 0 1 {name=p31 sig_type=std_logic lab=vss}
-C {/home/designer/shared/unic_cass_2026/magic/muliplier/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 -250 1 0 {name=x1}
-C {/home/designer/shared/unic_cass_2026/magic/muliplier/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 50 1 0 {name=x2}
-C {lab_pin.sym} 1020 170 0 1 {name=p13 sig_type=std_logic lab=vop}
-C {lab_pin.sym} 1020 -370 0 0 {name=p14 sig_type=std_logic lab=vom}
-C {lab_pin.sym} 1020 -100 0 1 {name=p15 sig_type=std_logic lab=vcm}
+C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 -250 1 0 {name=x1}
+C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 80 3 0 {name=x2}
+C {lab_pin.sym} 980 -70 2 1 {name=p13 sig_type=std_logic lab=vop}
+C {lab_pin.sym} 980 -100 0 0 {name=p14 sig_type=std_logic lab=vom}
+C {lab_pin.sym} 1020 -90 0 1 {name=p15 sig_type=std_logic lab=vcm}
 C {lab_pin.sym} 1170 -140 2 1 {name=p32 sig_type=std_logic lab=vcm}
+C {lab_pin.sym} 900 -90 0 0 {name=p12 sig_type=std_logic lab=vss}

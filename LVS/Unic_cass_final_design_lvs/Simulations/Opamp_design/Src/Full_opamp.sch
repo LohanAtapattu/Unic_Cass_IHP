@@ -38,90 +38,18 @@ N 150 -490 150 -460 {lab=vdd}
 N 150 -490 210 -490 {lab=vdd}
 N 210 -490 210 -460 {lab=vdd}
 N 210 -460 270 -460 {lab=vdd}
-C {/home/designer/shared/unic_cass_2026/magic/muliplier/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym} -10 -40 0 0 {name=x1}
-C {/home/designer/shared/unic_cass_2026/magic/muliplier/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sym} -150 -40 0 0 {name=x2}
+C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym} -10 -40 0 0 {name=x1}
+C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sym} -150 -40 0 0 {name=x2}
 C {lab_pin.sym} -40 -60 0 1 {name=p1 sig_type=std_logic lab=vop}
 C {lab_pin.sym} -40 0 0 1 {name=p2 sig_type=std_logic lab=vom}
 C {lab_pin.sym} 210 -10 0 0 {name=p3 sig_type=std_logic lab=vom}
 C {lab_pin.sym} 210 -70 0 0 {name=p4 sig_type=std_logic lab=vop}
-C {sg13g2_pr/rhigh.sym} 210 -140 3 0 {name=R1
-w=0.5e-6
-l=1e-6
-model=rhigh
-body=sub!
-spiceprefix=X
-b=0
-m=1
-}
-C {sg13g2_pr/rhigh.sym} 270 -140 3 0 {name=R2
-w=0.5e-6
-l=1e-6
-model=rhigh
-body=sub!
-spiceprefix=X
-b=0
-m=1
-}
-C {sg13g2_pr/rhigh.sym} 330 -140 3 0 {name=R3
-w=0.5e-6
-l=1e-6
-model=rhigh
-body=sub!
-spiceprefix=X
-b=0
-m=1
-}
-C {sg13g2_pr/rhigh.sym} 390 -140 3 0 {name=R4
-w=0.5e-6
-l=1e-6
-model=rhigh
-body=sub!
-spiceprefix=X
-b=0
-m=1
-}
 C {sg13g2_pr/cap_cmim.sym} 80 -140 1 0 {name=C2
 model=cap_cmim
 w=10.0e-6
 l=10.0e-6
 m=8
 spiceprefix=X}
-C {sg13g2_pr/rhigh.sym} 210 220 3 0 {name=R5
-w=0.5e-6
-l=1e-6
-model=rhigh
-body=sub!
-spiceprefix=X
-b=0
-m=1
-}
-C {sg13g2_pr/rhigh.sym} 270 220 3 0 {name=R6
-w=0.5e-6
-l=1e-6
-model=rhigh
-body=sub!
-spiceprefix=X
-b=0
-m=1
-}
-C {sg13g2_pr/rhigh.sym} 330 220 3 0 {name=R7
-w=0.5e-6
-l=1e-6
-model=rhigh
-body=sub!
-spiceprefix=X
-b=0
-m=1
-}
-C {sg13g2_pr/rhigh.sym} 390 220 3 0 {name=R8
-w=0.5e-6
-l=1e-6
-model=rhigh
-body=sub!
-spiceprefix=X
-b=0
-m=1
-}
 C {sg13g2_pr/cap_cmim.sym} 80 220 1 0 {name=C1
 model=cap_cmim
 w=10.0e-6
@@ -136,7 +64,7 @@ C {lab_pin.sym} 530 -20 0 1 {name=p15 sig_type=std_logic lab=voutp}
 C {lab_pin.sym} 530 -60 0 1 {name=p16 sig_type=std_logic lab=voutm}
 C {lab_pin.sym} -520 0 0 0 {name=p21 sig_type=std_logic lab=vm}
 C {lab_pin.sym} -450 30 0 0 {name=p22 sig_type=std_logic lab=vp}
-C {/home/designer/shared/unic_cass_2026/magic/muliplier/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym} -870 -230 0 0 {name=x3}
+C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym} -870 -230 0 0 {name=x3}
 C {lab_pin.sym} -700 -220 2 0 {name=p12 sig_type=std_logic lab=Ibias4}
 C {lab_pin.sym} 320 40 2 0 {name=p6 sig_type=std_logic lab=Ibias4}
 C {lab_pin.sym} 310 60 2 0 {name=p7 sig_type=std_logic lab=vdd}
@@ -164,5 +92,85 @@ C {sg13g2_pr/cap_cmim.sym} 180 -460 1 0 {name=C4
 model=cap_cmim
 w=10.0e-6
 l=2.0e-6
-m=40
+m=20
 spiceprefix=X}
+C {sg13g2_pr/rhigh.sym} 210 -140 3 0 {name=R4
+w=0.5e-6
+l=1e-6
+model=rhigh
+body=vss
+spiceprefix=X
+b=0
+m=1
+value="expr(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
+}
+C {sg13g2_pr/rhigh.sym} 270 -140 3 0 {name=R5
+w=0.5e-6
+l=1e-6
+model=rhigh
+body=vss
+spiceprefix=X
+b=0
+m=1
+value="expr(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
+}
+C {sg13g2_pr/rhigh.sym} 330 -140 3 0 {name=R6
+w=0.5e-6
+l=1e-6
+model=rhigh
+body=vss
+spiceprefix=X
+b=0
+m=1
+value="expr(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
+}
+C {sg13g2_pr/rhigh.sym} 390 -140 3 0 {name=R7
+w=0.5e-6
+l=1e-6
+model=rhigh
+body=vss
+spiceprefix=X
+b=0
+m=1
+value="expr(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
+}
+C {sg13g2_pr/rhigh.sym} 210 220 3 0 {name=R1
+w=0.5e-6
+l=1e-6
+model=rhigh
+body=vss
+spiceprefix=X
+b=0
+m=1
+value="expr(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
+}
+C {sg13g2_pr/rhigh.sym} 270 220 3 0 {name=R2
+w=0.5e-6
+l=1e-6
+model=rhigh
+body=vss
+spiceprefix=X
+b=0
+m=1
+value="expr(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
+}
+C {sg13g2_pr/rhigh.sym} 330 220 3 0 {name=R3
+w=0.5e-6
+l=1e-6
+model=rhigh
+body=vss
+spiceprefix=X
+b=0
+m=1
+value="expr(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
+}
+C {sg13g2_pr/rhigh.sym} 390 220 3 0 {name=R8
+w=0.5e-6
+l=1e-6
+model=rhigh
+body=vss
+spiceprefix=X
+b=0
+m=1
+value="expr(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
+}

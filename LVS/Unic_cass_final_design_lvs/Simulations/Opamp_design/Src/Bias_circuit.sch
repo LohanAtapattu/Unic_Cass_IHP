@@ -241,17 +241,6 @@ N -490 -1490 -490 -1430 {lab=vdd}
 N -490 -1490 -390 -1490 {lab=vdd}
 N -490 -1430 -490 -1330 {lab=vdd}
 N -490 -1330 -390 -1330 {lab=vdd}
-N -160 -1480 -160 -1450 {lab=vss}
-N -240 -1420 -200 -1420 {lab=vss}
-N -240 -1420 -240 -1360 {lab=vss}
-N -160 -1360 -100 -1360 {lab=vss}
-N -100 -1420 -100 -1360 {lab=vss}
-N -160 -1420 -100 -1420 {lab=vss}
-N -160 -1390 -160 -1360 {lab=vss}
-N -240 -1360 -160 -1360 {lab=vss}
-N -160 -1480 -100 -1480 {lab=vss}
-N -160 -1500 -160 -1480 {lab=vss}
-N -100 -1480 -100 -1420 {lab=vss}
 N 60 -1470 60 -1440 {lab=vdd}
 N -20 -1410 20 -1410 {lab=vdd}
 N -20 -1410 -20 -1350 {lab=vdd}
@@ -644,15 +633,6 @@ model=sg13_lv_pmos
 spiceprefix=X
 }
 C {lab_pin.sym} -390 -1520 0 0 {name=p74 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} -160 -1500 0 0 {name=p75 sig_type=std_logic lab=vss}
-C {sg13g2_pr/sg13_lv_nmos.sym} -180 -1420 0 0 {name=M37
-l=10u
-w=0.5u
-ng=1
-m=32
-model=sg13_lv_nmos
-spiceprefix=X
-}
 C {sg13g2_pr/sg13_lv_pmos.sym} 40 -1410 0 0 {name=M38
 l=2u
 w=5u

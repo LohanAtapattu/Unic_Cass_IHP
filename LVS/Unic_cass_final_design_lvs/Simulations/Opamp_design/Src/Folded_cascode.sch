@@ -225,29 +225,12 @@ N -630 -990 -550 -990 {lab=vss}
 N -550 -990 -550 -960 {lab=vss}
 N -590 -960 -550 -960 {lab=vss}
 N -630 -930 -420 -930 {lab=vss}
-N -420 -990 -420 -930 {lab=vss}
-N -420 -990 -340 -990 {lab=vss}
-N -340 -990 -340 -960 {lab=vss}
-N -380 -960 -340 -960 {lab=vss}
-N -420 -930 -200 -930 {lab=vss}
+N -420 -960 -420 -930 {lab=vss}
+N -360 -930 -200 -930 {lab=vss}
 N -200 -990 -200 -930 {lab=vss}
 N -200 -990 -120 -990 {lab=vss}
 N -120 -990 -120 -960 {lab=vss}
 N -160 -960 -120 -960 {lab=vss}
-N 10 -990 10 -930 {lab=vss}
-N 10 -990 90 -990 {lab=vss}
-N 90 -990 90 -960 {lab=vss}
-N 50 -960 90 -960 {lab=vss}
-N 10 -930 190 -930 {lab=vss}
-N 190 -990 190 -930 {lab=vss}
-N 190 -990 270 -990 {lab=vss}
-N 270 -990 270 -960 {lab=vss}
-N 230 -960 270 -960 {lab=vss}
-N 350 -990 350 -930 {lab=vss}
-N 350 -990 430 -990 {lab=vss}
-N 430 -990 430 -960 {lab=vss}
-N 390 -960 430 -960 {lab=vss}
-N 350 -930 390 -930 {lab=vss}
 N -630 -860 -630 -800 {lab=vss}
 N -630 -860 -550 -860 {lab=vss}
 N -550 -860 -550 -830 {lab=vss}
@@ -257,29 +240,23 @@ N -410 -860 -410 -800 {lab=vss}
 N -410 -860 -330 -860 {lab=vss}
 N -330 -860 -330 -830 {lab=vss}
 N -370 -830 -330 -830 {lab=vss}
-N -410 -800 -200 -800 {lab=vss}
-N -200 -860 -200 -800 {lab=vss}
-N -200 -860 -120 -860 {lab=vss}
-N -120 -860 -120 -830 {lab=vss}
-N -160 -830 -120 -830 {lab=vss}
-N 10 -860 10 -800 {lab=vss}
-N 10 -860 90 -860 {lab=vss}
-N 90 -860 90 -830 {lab=vss}
-N 50 -830 90 -830 {lab=vss}
-N 10 -800 190 -800 {lab=vss}
 N 190 -860 190 -800 {lab=vss}
 N 190 -860 270 -860 {lab=vss}
 N 270 -860 270 -830 {lab=vss}
 N 230 -830 270 -830 {lab=vss}
-N 190 -800 350 -800 {lab=vss}
-N 350 -860 350 -800 {lab=vss}
-N 350 -860 430 -860 {lab=vss}
-N 430 -860 430 -830 {lab=vss}
-N 390 -830 430 -830 {lab=vss}
-N 350 -800 390 -800 {lab=vss}
-N -200 -800 10 -800 {lab=vss}
-N -200 -930 10 -930 {lab=vss}
-N 190 -930 350 -930 {lab=vss}
+N 770 -620 770 -590 {lab=vdd}
+N 770 -620 830 -620 {lab=vdd}
+N 830 -620 830 -590 {lab=vdd}
+N 830 -590 890 -590 {lab=vdd}
+N 190 -800 230 -800 {lab=vss}
+N -200 -930 -160 -930 {lab=vss}
+N -420 -960 -380 -960 {lab=vss}
+N -420 -1020 -420 -960 {lab=vss}
+N -420 -1020 -380 -1020 {lab=vss}
+N -380 -990 -360 -990 {lab=vss}
+N -360 -990 -360 -930 {lab=vss}
+N -420 -930 -360 -930 {lab=vss}
+N -410 -800 190 -800 {lab=vss}
 C {sg13g2_pr/sg13_lv_pmos.sym} 380 -230 0 0 {name=M1
 l=5u
 w=1u
@@ -554,7 +531,7 @@ C {sg13g2_pr/sg13_lv_nmos.sym} -610 -960 0 0 {name=M25
 l=10u
 w=0.5u
 ng=1
-m=8
+m=38
 model=sg13_lv_nmos
 spiceprefix=X
 }
@@ -562,19 +539,11 @@ C {sg13g2_pr/sg13_lv_nmos.sym} -610 -830 0 0 {name=M26
 l=0.5u
 w=0.5u
 ng=1
-m=22
+m=54
 model=sg13_lv_nmos
 spiceprefix=X
 }
 C {lab_pin.sym} -630 -800 0 0 {name=p55 sig_type=std_logic lab=vss}
-C {sg13g2_pr/sg13_lv_nmos.sym} -180 -830 0 0 {name=M27
-l=10u
-w=0.5u
-ng=1
-m=4
-model=sg13_lv_nmos
-spiceprefix=X
-}
 C {sg13g2_pr/sg13_lv_nmos.sym} -180 -960 0 0 {name=M28
 l=0.5u
 w=1u
@@ -583,43 +552,11 @@ m=42
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 30 -830 0 0 {name=M29
-l=0.5u
-w=0.5u
-ng=1
-m=4
-model=sg13_lv_nmos
-spiceprefix=X
-}
-C {sg13g2_pr/sg13_lv_nmos.sym} 210 -960 0 0 {name=M30
-l=10u
-w=0.5u
-ng=1
-m=4
-model=sg13_lv_nmos
-spiceprefix=X
-}
 C {sg13g2_pr/sg13_lv_nmos.sym} 210 -830 0 0 {name=M31
 l=0.5u
 w=2u
 ng=1
 m=20
-model=sg13_lv_nmos
-spiceprefix=X
-}
-C {sg13g2_pr/sg13_lv_nmos.sym} 370 -830 0 0 {name=M33
-l=10u
-w=0.5u
-ng=1
-m=8
-model=sg13_lv_nmos
-spiceprefix=X
-}
-C {sg13g2_pr/sg13_lv_nmos.sym} 370 -960 0 0 {name=M34
-l=0.5u
-w=0.5u
-ng=1
-m=24
 model=sg13_lv_nmos
 spiceprefix=X
 }
@@ -665,7 +602,7 @@ model=sg13_lv_pmos
 spiceprefix=X
 }
 C {lab_pin.sym} 1720 -860 0 0 {name=p60 sig_type=std_logic lab=vdd}
-C {sg13g2_pr/sg13_lv_nmos.sym} -400 -960 0 0 {name=M40
+C {sg13g2_pr/sg13_lv_nmos.sym} -400 -990 0 0 {name=M40
 l=1u
 w=0.6u
 ng=1
@@ -706,12 +643,11 @@ model=sg13_lv_pmos
 spiceprefix=X
 }
 C {lab_pin.sym} 1530 -730 0 0 {name=p62 sig_type=std_logic lab=vdd}
-C {sg13g2_pr/sg13_lv_nmos.sym} 30 -960 0 0 {name=M45
-l=0.5u
-w=0.5u
-ng=1
-m=4
-model=sg13_lv_nmos
-spiceprefix=X
-}
 C {lab_pin.sym} -630 -930 0 0 {name=p57 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 890 -590 1 0 {name=p56 sig_type=std_logic lab=vdd}
+C {sg13g2_pr/cap_cmim.sym} 800 -590 1 0 {name=C4
+model=cap_cmim
+w=10.0e-6
+l=2.0e-6
+m=20
+spiceprefix=X}

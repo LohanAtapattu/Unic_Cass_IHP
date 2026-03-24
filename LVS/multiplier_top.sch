@@ -43,7 +43,7 @@ N 600 -740 640 -740 {lab=vss}
 N 600 -780 600 -740 {lab=vss}
 N 570 -780 600 -780 {lab=vss}
 N 570 -780 570 -740 {lab=vss}
-C {/home/designer/shared/unic_cass_2026/magic/muliplier/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sym} 1120 -380 0 0 {name=x1}
+C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sym} 1120 -380 0 0 {name=x1}
 C {sg13g2_pr/sg13_lv_nmos.sym} 330 -570 3 0 {name=M1
 l=2u
 w=2.5u
@@ -57,7 +57,6 @@ C {lab_pin.sym} 60 -260 0 0 {name=p2 sig_type=std_logic lab=vxn}
 C {lab_pin.sym} 330 -630 1 0 {name=p3 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 580 -500 1 0 {name=p4 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 320 -360 1 0 {name=p5 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 580 -240 1 0 {name=p6 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1010 -380 0 0 {name=p7 sig_type=std_logic lab=vref}
 C {lab_pin.sym} 1030 -210 0 0 {name=p8 sig_type=std_logic lab=Rgm}
 C {lab_pin.sym} 1030 -190 0 0 {name=p9 sig_type=std_logic lab=vdd}
@@ -120,3 +119,4 @@ model=sg13_lv_nmos
 spiceprefix=X
 }
 C {lab_pin.sym} 500 -740 1 0 {name=p35 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 580 -240 1 0 {name=p6 sig_type=std_logic lab=vss}
