@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -40 -140 -40 -60 {lab=vop}
 N -40 -140 50 -140 {lab=vop}
@@ -38,8 +39,8 @@ N 150 -490 150 -460 {lab=vdd}
 N 150 -490 210 -490 {lab=vdd}
 N 210 -490 210 -460 {lab=vdd}
 N 210 -460 270 -460 {lab=vdd}
-C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym} -10 -40 0 0 {name=x1}
-C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sym} -150 -40 0 0 {name=x2}
+C {/home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym} -10 -40 0 0 {name=x1}
+C {/home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sym} -150 -40 0 0 {name=x2}
 C {lab_pin.sym} -40 -60 0 1 {name=p1 sig_type=std_logic lab=vop}
 C {lab_pin.sym} -40 0 0 1 {name=p2 sig_type=std_logic lab=vom}
 C {lab_pin.sym} 210 -10 0 0 {name=p3 sig_type=std_logic lab=vom}
@@ -64,7 +65,7 @@ C {lab_pin.sym} 530 -20 0 1 {name=p15 sig_type=std_logic lab=voutp}
 C {lab_pin.sym} 530 -60 0 1 {name=p16 sig_type=std_logic lab=voutm}
 C {lab_pin.sym} -520 0 0 0 {name=p21 sig_type=std_logic lab=vm}
 C {lab_pin.sym} -450 30 0 0 {name=p22 sig_type=std_logic lab=vp}
-C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym} -870 -230 0 0 {name=x3}
+C {/home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym} -870 -230 0 0 {name=x3}
 C {lab_pin.sym} -700 -220 2 0 {name=p12 sig_type=std_logic lab=Ibias4}
 C {lab_pin.sym} 320 40 2 0 {name=p6 sig_type=std_logic lab=Ibias4}
 C {lab_pin.sym} 310 60 2 0 {name=p7 sig_type=std_logic lab=vdd}

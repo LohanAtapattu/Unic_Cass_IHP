@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -420 50 -420 110 {lab=#net1}
 N -330 110 -240 110 {lab=#net1}
@@ -531,7 +532,7 @@ C {sg13g2_pr/sg13_lv_nmos.sym} -610 -960 0 0 {name=M25
 l=10u
 w=0.5u
 ng=1
-m=38
+m=58
 model=sg13_lv_nmos
 spiceprefix=X
 }

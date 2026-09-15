@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 950 -460 1030 -460 {lab=vop}
 N 360 -590 950 -590 {lab=vop}
@@ -43,7 +44,7 @@ N 600 -740 640 -740 {lab=vss}
 N 600 -780 600 -740 {lab=vss}
 N 570 -780 600 -780 {lab=vss}
 N 570 -780 570 -740 {lab=vss}
-C {/home/designer/shared/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sym} 1120 -380 0 0 {name=x1}
+C {/home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sym} 1120 -380 0 0 {name=x1}
 C {sg13g2_pr/sg13_lv_nmos.sym} 330 -570 3 0 {name=M1
 l=2u
 w=2.5u
