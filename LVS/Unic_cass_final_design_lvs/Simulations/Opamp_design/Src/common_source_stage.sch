@@ -366,8 +366,8 @@ l=2.0e-6
 m=10
 spiceprefix=X}
 C {lab_pin.sym} 1150 -570 0 1 {name=p31 sig_type=std_logic lab=vss}
-C {/home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 -250 1 0 {name=x1}
-C {/home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 80 3 0 {name=x2}
+C {Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 -250 1 0 {name=x1}
+C {Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 80 3 0 {name=x2}
 C {lab_pin.sym} 980 -70 2 1 {name=p13 sig_type=std_logic lab=vop}
 C {lab_pin.sym} 980 -100 0 0 {name=p14 sig_type=std_logic lab=vom}
 C {lab_pin.sym} 1020 -90 0 1 {name=p15 sig_type=std_logic lab=vcm}
