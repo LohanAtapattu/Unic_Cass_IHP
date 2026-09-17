@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 950 -460 1030 -460 {lab=vop}
 N 360 -590 950 -590 {lab=vop}
@@ -119,4 +120,4 @@ spiceprefix=X
 }
 C {lab_pin.sym} 500 -740 1 0 {name=p35 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 580 -240 1 0 {name=p6 sig_type=std_logic lab=vss}
-C {/foss/designs/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sym} 1120 -380 0 0 {name=x1}
+C {LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sym} 1120 -380 0 0 {name=x1}

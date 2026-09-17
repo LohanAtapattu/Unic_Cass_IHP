@@ -1,9 +1,9 @@
-# Logfile created on 2026-09-15 11:26:10 +0200 by logger.rb/v1.4.3
-2026-09-15 11:26:10 +0200: Memory Usage (430364K) : Starting running IHP-SG13G2 Klayout DRC maximum runset on /home/designer/shared/Unic_Cass_IHP/gds/multiplier_top.gds
-2026-09-15 11:26:10 +0200: Memory Usage (430364K) : Ruby Version for klayout: 3.0.2
-2026-09-15 11:26:10 +0200: Memory Usage (430364K) : Loading database to memory is complete.
-2026-09-15 11:26:10 +0200: Memory Usage (430364K) : IHP-SG13G2 Klayout DRC maximum runset output at: /home/designer/shared/Unic_Cass_IHP/DRC/multiplier_top_multiplier_top_sg13g2_maximal.lyrdb
-2026-09-15 11:26:10 +0200: Memory Usage (430364K) : Evaluate switches.
-2026-09-15 11:26:10 +0200: Memory Usage (430364K) : Klayout will use 1 thread(s)
-2026-09-15 11:26:10 +0200: Memory Usage (430364K) : deep mode is enabled for sg13g2_maximal runset.
-2026-09-15 11:26:37 +0200: Memory Usage (455980K) : KLayout DRC run for maximum ruleSet completed in 26.99 seconds
+# Logfile created on 2026-09-17 08:44:24 +0200 by logger.rb/v1.4.3
+2026-09-17 08:44:24 +0200: Memory Usage (433036K) : Starting running IHP-SG13G2 Klayout DRC maximum runset on /home/designer/shared/Unic_Cass_IHP/gds/multiplier_top.gds
+2026-09-17 08:44:24 +0200: Memory Usage (433036K) : Ruby Version for klayout: 3.0.2
+2026-09-17 08:44:24 +0200: Memory Usage (433036K) : Loading database to memory is complete.
+2026-09-17 08:44:24 +0200: Memory Usage (433036K) : IHP-SG13G2 Klayout DRC maximum runset output at: /home/designer/shared/Unic_Cass_IHP/DRC/multiplier_top_multiplier_top_sg13g2_maximal.lyrdb
+2026-09-17 08:44:24 +0200: Memory Usage (433036K) : Evaluate switches.
+2026-09-17 08:44:24 +0200: Memory Usage (433036K) : Klayout will use 1 thread(s)
+2026-09-17 08:44:24 +0200: Memory Usage (433036K) : deep mode is enabled for sg13g2_maximal runset.
+2026-09-17 08:44:52 +0200: Memory Usage (464972K) : KLayout DRC run for maximum ruleSet completed in 28.44 seconds

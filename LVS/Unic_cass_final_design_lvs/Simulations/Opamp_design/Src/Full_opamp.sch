@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -40 -140 -40 -60 {lab=vopx}
 N -40 -140 50 -140 {lab=vopx}
@@ -171,6 +172,6 @@ b=0
 m=1
 value="expr(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
 }
-C {/foss/designs/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym} -870 -230 0 0 {name=x3}
-C {/foss/designs/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sym} -150 -40 0 0 {name=x1}
-C {/foss/designs/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym} -10 -40 0 0 {name=x2}
+C {LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym} -870 -230 0 0 {name=x3}
+C {LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sym} -150 -40 0 0 {name=x1}
+C {LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym} -10 -40 0 0 {name=x2}

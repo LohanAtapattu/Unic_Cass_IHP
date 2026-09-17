@@ -1,0 +1,10 @@
+17-Sep-2026 08:44:11 | INFO    | KLayout version detected: 0.30.11 (required >= 0.30.5)
+17-Sep-2026 08:44:11 | WARNING | KLayout binary version (0.30.11) differs from the imported klayout Python package version (0.30.12). Re-align with: pip install klayout==0.30.11
+17-Sep-2026 08:44:11 | INFO    | Using DRC JSON file: /opt/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+17-Sep-2026 08:44:11 | INFO    | Running IHP-SG13G2 main checks on design /home/designer/shared/Unic_Cass_IHP/gds/multiplier_top.gds, topcell: multiplier_top
+17-Sep-2026 08:44:22 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /home/designer/shared/Unic_Cass_IHP/gds/multiplier_top.gds, topcell: multiplier_top
+17-Sep-2026 08:44:53 | INFO    | Completed running Sg13g2_maximal checks.
+17-Sep-2026 08:44:53 | INFO    | =====================================================================================
+17-Sep-2026 08:44:53 | INFO    | ✅ --- KLayout DRC Check Passed: No DRC violations detected in the layout. --- ✅
+17-Sep-2026 08:44:53 | INFO    | =====================================================================================
+17-Sep-2026 08:44:53 | INFO    | Total DRC Run time: 42.14 seconds (including execution, analysis, and reporting)

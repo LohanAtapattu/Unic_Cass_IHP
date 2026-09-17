@@ -1,25 +1,21 @@
 ** sch_path: /home/designer/shared/Unic_Cass_IHP/LVS/multiplier_top.sch
-.subckt multiplier_top vxp vxn vyp vyn vop vom vref Rgm vdd vss on_chip_bias ext_bias voutm voutp
+.subckt multiplier_top vdd vxp vxn vss on_chip_bias vyp ext_bias vyn vop voutm vom voutp vref Rgm
 *.PININFO vxp:B vxn:B vyp:B vyn:B vop:B vom:B vref:B Rgm:B vdd:B vss:B on_chip_bias:B ext_bias:B voutm:B voutp:B
-x1 on_chip_bias vref vdd voutm ext_bias vom voutp vss vop Rgm Full_opamp
 MM1 vxp vyp vop vss sg13_lv_nmos w=2.5u l=2u ng=1 m=4
 MM2 vxp vyn vom vss sg13_lv_nmos w=2.5u l=2u ng=1 m=4
 MM3 vxn vyn vop vss sg13_lv_nmos w=2.5u l=2u ng=1 m=4
 MM4 vxn vyp vom vss sg13_lv_nmos w=2.5u l=2u ng=1 m=4
 MM5 vss vss vss vss sg13_lv_nmos w=2.5u l=2u ng=1 m=20
+x1 on_chip_bias vref vdd voutm ext_bias vom voutp vss vop Rgm Full_opamp
 .ends
 
-* expanding   symbol:
-*+  /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sym # of pins=10
+* expanding   symbol:  LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sym # of pins=10
 ** sym_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sym
 ** sch_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Full_opamp.sch
 .subckt Full_opamp on_chip_bias vref vdd voutm ext_bias vm voutp vss vp Rgm
 *.PININFO on_chip_bias:B ext_bias:B Rgm:B vdd:B vss:B vref:B vm:B vp:B voutm:B voutp:B
-x1 Ibias4 vdd vss vop vom voutm voutp vref common_source_stage
-x2 net3 net5 net4 vm vp vss vdd vref vop vom Folded_cascode
-CC2 net1 vop cap_cmim w=10.0e-6 l=10.0e-6 m=8
-CC1 net2 vom cap_cmim w=10.0e-6 l=10.0e-6 m=8
-x3 net4 on_chip_bias net5 vdd ext_bias vss net3 Rgm Ibias4 Bias_circuit
+CC2 net1 vopx cap_cmim w=10.0e-6 l=10.0e-6 m=8
+CC1 net2 vomx cap_cmim w=10.0e-6 l=10.0e-6 m=8
 CC4 vdd vdd cap_cmim w=10.0e-6 l=2.0e-6 m=20
 RR4 net1 net6 3276.52173913043 $SUB=vss $[rhigh] w=0.5e-6 l=1e-6 b=0
 RR5 net6 net7 3276.52173913043 $SUB=vss $[rhigh] w=0.5e-6 l=1e-6 b=0
@@ -29,45 +25,59 @@ RR1 net2 net9 3276.52173913043 $SUB=vss $[rhigh] w=0.5e-6 l=1e-6 b=0
 RR2 net9 net10 3276.52173913043 $SUB=vss $[rhigh] w=0.5e-6 l=1e-6 b=0
 RR3 net10 net11 3276.52173913043 $SUB=vss $[rhigh] w=0.5e-6 l=1e-6 b=0
 RR8 net11 voutp 3276.52173913043 $SUB=vss $[rhigh] w=0.5e-6 l=1e-6 b=0
+x3 net4 on_chip_bias net5 vdd ext_bias vss net3 Rgm Ibias4 Bias_circuit
+x1 net3 net5 net4 vm vp vss vdd vref vopx vomx Folded_cascode
+x2 Ibias4 vdd vss vopx vomx voutm voutp vref common_source_stage
 .ends
 
 
-* expanding   symbol:
-*+  /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym # of pins=8
-** sym_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym
-** sch_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sch
-.subckt common_source_stage vbias3 vdd vss vopin vomin vom vop vref
-*.PININFO vbias3:B vdd:B vss:B vopin:B vomin:B vom:B vop:B vref:B
-MM20 vbiasp vbiasp vdd vdd sg13_lv_pmos w=1u l=5u ng=1 m=60
-MM21 vbias3 vbias3 vss vss sg13_lv_nmos w=0.6u l=1u ng=1 m=2
-MM22 vbiasp vbias3 vss vss sg13_lv_nmos w=0.6u l=1u ng=1 m=2
-MM1 vom vopin vdd vdd sg13_lv_pmos w=2u l=2u ng=1 m=10
-MM2 vop vomin vdd vdd sg13_lv_pmos w=2u l=2u ng=1 m=10
-MM3 vom vout vss vss sg13_lv_nmos w=1u l=2u ng=1 m=10
-MM4 vop vout vss vss sg13_lv_nmos w=1u l=2u ng=1 m=10
-MM5 net2 vbiasp vdd vdd sg13_lv_pmos w=1u l=5u ng=1 m=2
-MM6 net1 vcm net2 vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=4
-MM7 vout vref net2 vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=4
-MM8 net1 net1 vss vss sg13_lv_nmos w=0.25u l=10u ng=1 m=2
-MM9 vout net1 vss vss sg13_lv_nmos w=0.25u l=10u ng=1 m=2
-CC1 vout vom cap_cmim w=10.0e-6 l=10.0e-6 m=3
-CC2 vout vop cap_cmim w=10.0e-6 l=10.0e-6 m=3
-MM10 vss vss vss vss sg13_lv_nmos w=1u l=2u ng=1 m=22
-MM13 vss vss vss vss sg13_lv_nmos w=0.25u l=1u ng=1 m=8
-MM14 vdd vdd vdd vdd sg13_lv_pmos w=0.5u l=0.5u ng=1 m=12
-MM15 vdd vdd vdd vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=4
-MM17 vdd vdd vdd vdd sg13_lv_pmos w=1u l=1u ng=1 m=20
-MM18 vss vss vss vss sg13_lv_nmos w=0.6u l=1u ng=1 m=12
-MM16 vdd vdd vdd vdd sg13_lv_pmos w=1u l=5u ng=1 m=18
-MM11 vdd vdd vdd vdd sg13_lv_pmos w=2u l=2u ng=1 m=22
-CC3 vss vss cap_cmim w=10.0e-6 l=2.0e-6 m=10
-x1 vcm vss vom res
-x2 vop vss vcm res
+* expanding   symbol:  LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym # of pins=9
+** sym_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym
+** sch_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sch
+.subckt Bias_circuit Ibias1 en_1 Ibias2 vdd en_2 vss Ibias3 Rgm Ibias4
+*.PININFO en_1:B en_2:B Rgm:B vdd:B vss:B Ibias1:B Ibias2:B Ibias3:B Ibias4:B
+MM12 net1 net2 vss vss sg13_lv_nmos w=5u l=2u ng=1 m=2
+MM13 net1 net1 vdd vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=2
+MM1 Pbias net1 net2 vss sg13_lv_nmos w=0.5u l=10u ng=1 m=40
+MM2 net2 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
+MM3 net2 net2 vss vss sg13_lv_nmos w=5u l=2u ng=1 m=2
+MM4 net3 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
+MM5 net3 net3 beta vss sg13_lv_nmos w=5u l=2u ng=1 m=8
+MM6 net6 net6 vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
+MM7 Pbias net6 vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
+MM8 net6 net3 net4 vss sg13_lv_nmos w=5u l=2u ng=1 m=2
+MM9 Pbias net2 net5 vss sg13_lv_nmos w=5u l=2u ng=1 m=2
+MM10 Pbias en_1 vdd vdd sg13_lv_pmos w=1u l=0.15u ng=1
+MM11 net4 en_1 vss vss sg13_lv_nmos w=1u l=0.15u ng=1 m=10
+MM14 net5 en_1 vss vss sg13_lv_nmos w=1u l=0.15u ng=1 m=10
+MM15 net7 Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
+MM16 net7 en_2 Ibias1 vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM17 net8 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
+MM18 net8 en_1 Ibias1 vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM19 Ebias Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
+MM20 beta en_1 Rgm vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM21 Ebias en_2 Rgm vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM22 net9 Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
+MM23 net9 en_2 Ibias2 vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM24 net10 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
+MM25 net10 en_1 Ibias2 vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM26 net11 Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
+MM27 net11 en_2 Ibias3 vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM28 net12 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
+MM29 net12 en_1 Ibias3 vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM30 net13 Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
+MM31 net13 en_2 Ibias4 vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM32 net14 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
+MM33 net14 en_1 Ibias4 vss sg13_lv_nmos w=1u l=0.15u ng=1
+MM34 vss vss vss vss sg13_lv_nmos w=5u l=2u ng=1 m=20
+MM35 vdd vdd vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=24
+MM36 vdd vdd vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=18
+MM38 vdd vdd vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=16
+MM39 vdd vdd vdd vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=10
 .ends
 
 
-* expanding   symbol:
-*+  /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sym # of pins=10
+* expanding   symbol:  LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sym # of pins=10
 ** sym_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sym
 ** sch_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Folded_cascode.sch
 .subckt Folded_cascode vbias3 vbias2 vbias1 vm vp vss vdd vref vop vom
@@ -116,55 +126,40 @@ CC4 vdd vdd cap_cmim w=10.0e-6 l=2.0e-6 m=20
 .ends
 
 
-* expanding   symbol:
-*+  /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym # of pins=9
-** sym_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sym
-** sch_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/Bias_circuit.sch
-.subckt Bias_circuit Ibias1 en_1 Ibias2 vdd en_2 vss Ibias3 Rgm Ibias4
-*.PININFO en_1:B en_2:B Rgm:B vdd:B vss:B Ibias1:B Ibias2:B Ibias3:B Ibias4:B
-MM12 net1 net2 vss vss sg13_lv_nmos w=5u l=2u ng=1 m=2
-MM13 net1 net1 vdd vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=2
-MM1 Pbias net1 net2 vss sg13_lv_nmos w=0.5u l=10u ng=1 m=40
-MM2 net2 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
-MM3 net2 net2 vss vss sg13_lv_nmos w=5u l=2u ng=1 m=2
-MM4 net3 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
-MM5 net3 net3 beta vss sg13_lv_nmos w=5u l=2u ng=1 m=8
-MM6 net6 net6 vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
-MM7 Pbias net6 vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
-MM8 net6 net3 net4 vss sg13_lv_nmos w=5u l=2u ng=1 m=2
-MM9 Pbias net2 net5 vss sg13_lv_nmos w=5u l=2u ng=1 m=2
-MM10 Pbias en_1 vdd vdd sg13_lv_pmos w=1u l=0.15u ng=1
-MM11 net4 en_1 vss vss sg13_lv_nmos w=1u l=0.15u ng=1 m=10
-MM14 net5 en_1 vss vss sg13_lv_nmos w=1u l=0.15u ng=1 m=10
-MM15 net7 Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
-MM16 net7 en_2 Ibias1 vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM17 net8 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
-MM18 net8 en_1 Ibias1 vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM19 Ebias Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
-MM20 beta en_1 Rgm vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM21 Ebias en_2 Rgm vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM22 net9 Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
-MM23 net9 en_2 Ibias2 vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM24 net10 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
-MM25 net10 en_1 Ibias2 vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM26 net11 Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
-MM27 net11 en_2 Ibias3 vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM28 net12 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
-MM29 net12 en_1 Ibias3 vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM30 net13 Ebias vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=2
-MM31 net13 en_2 Ibias4 vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM32 net14 Pbias vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=4
-MM33 net14 en_1 Ibias4 vss sg13_lv_nmos w=1u l=0.15u ng=1
-MM34 vss vss vss vss sg13_lv_nmos w=5u l=2u ng=1 m=20
-MM35 vdd vdd vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=24
-MM36 vdd vdd vdd vdd sg13_lv_pmos w=5u l=1u ng=1 m=18
-MM38 vdd vdd vdd vdd sg13_lv_pmos w=5u l=2u ng=1 m=16
-MM39 vdd vdd vdd vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=10
+* expanding   symbol:  LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym # of pins=8
+** sym_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sym
+** sch_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/common_source_stage.sch
+.subckt common_source_stage vbias3 vdd vss vopin vomin vom vop vref
+*.PININFO vbias3:B vdd:B vss:B vopin:B vomin:B vom:B vop:B vref:B
+MM20 vbiasp vbiasp vdd vdd sg13_lv_pmos w=1u l=5u ng=1 m=60
+MM21 vbias3 vbias3 vss vss sg13_lv_nmos w=0.6u l=1u ng=1 m=2
+MM22 vbiasp vbias3 vss vss sg13_lv_nmos w=0.6u l=1u ng=1 m=2
+MM1 vom vopin vdd vdd sg13_lv_pmos w=2u l=2u ng=1 m=10
+MM2 vop vomin vdd vdd sg13_lv_pmos w=2u l=2u ng=1 m=10
+MM3 vom vout vss vss sg13_lv_nmos w=1u l=2u ng=1 m=10
+MM4 vop vout vss vss sg13_lv_nmos w=1u l=2u ng=1 m=10
+MM5 net2 vbiasp vdd vdd sg13_lv_pmos w=1u l=5u ng=1 m=2
+MM6 net1 vcm net2 vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=4
+MM7 vout vref net2 vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=4
+MM8 net1 net1 vss vss sg13_lv_nmos w=0.25u l=10u ng=1 m=2
+MM9 vout net1 vss vss sg13_lv_nmos w=0.25u l=10u ng=1 m=2
+CC1 vout vom cap_cmim w=10.0e-6 l=10.0e-6 m=3
+CC2 vout vop cap_cmim w=10.0e-6 l=10.0e-6 m=3
+MM10 vss vss vss vss sg13_lv_nmos w=1u l=2u ng=1 m=22
+MM13 vss vss vss vss sg13_lv_nmos w=0.25u l=1u ng=1 m=8
+MM14 vdd vdd vdd vdd sg13_lv_pmos w=0.5u l=0.5u ng=1 m=12
+MM15 vdd vdd vdd vdd sg13_lv_pmos w=0.5u l=10u ng=1 m=4
+MM17 vdd vdd vdd vdd sg13_lv_pmos w=1u l=1u ng=1 m=20
+MM18 vss vss vss vss sg13_lv_nmos w=0.6u l=1u ng=1 m=12
+MM16 vdd vdd vdd vdd sg13_lv_pmos w=1u l=5u ng=1 m=18
+MM11 vdd vdd vdd vdd sg13_lv_pmos w=2u l=2u ng=1 m=22
+CC3 vss vss cap_cmim w=10.0e-6 l=2.0e-6 m=10
+x1 vom vss vcm res
+x2 vop vss vcm res
 .ends
 
 
-* expanding   symbol:  /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym #
-*+ of pins=3
+* expanding   symbol:  LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym # of pins=3
 ** sym_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym
 ** sch_path: /home/designer/shared/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sch
 .subckt res vin vss vout

@@ -1,8 +1,9 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 100 -30 100 10 {lab=vbiasp}
 N -20 40 60 40 {lab=vbias3}
@@ -370,5 +371,5 @@ C {lab_pin.sym} 980 -100 0 0 {name=p14 sig_type=std_logic lab=vom}
 C {lab_pin.sym} 1020 -90 0 1 {name=p15 sig_type=std_logic lab=vcm}
 C {lab_pin.sym} 1170 -140 2 1 {name=p32 sig_type=std_logic lab=vcm}
 C {lab_pin.sym} 900 -90 0 0 {name=p12 sig_type=std_logic lab=vss}
-C {/foss/designs/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 -250 3 1 {name=x1}
-C {/foss/designs/Unic_Cass_IHP/LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 80 3 0 {name=x2}
+C {LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 -250 3 1 {name=x1}
+C {LVS/Unic_cass_final_design_lvs/Simulations/Opamp_design/Src/res.sym} 1000 80 3 0 {name=x2}

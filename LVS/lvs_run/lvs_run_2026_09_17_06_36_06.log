@@ -1,0 +1,25 @@
+17-Sep-2026 08:36:07 | INFO    | Your Klayout version is: KLayout 0.30.11 (required >= 0.30.5)
+17-Sep-2026 08:36:07 | WARNING | KLayout binary version (0.30.11) differs from the imported klayout Python package version (0.30.12). Re-align with: pip install klayout==0.30.11
+17-Sep-2026 08:36:07 | INFO    | Running SG13G2 LVS checks on design /home/designer/shared/Unic_Cass_IHP/gds/multiplier_top.gds on cell multiplier_top
+17-Sep-2026 08:36:13 | INFO    | ==============================================================================
+17-Sep-2026 08:36:13 | INFO    | Important Summary
+17-Sep-2026 08:36:13 | INFO    | +------------------+--------------------------------------------------------------+
+17-Sep-2026 08:36:13 | INFO    | | Status           | PASS                                                         |
+17-Sep-2026 08:36:13 | INFO    | | Mode             | COMPARE                                                      |
+17-Sep-2026 08:36:13 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                      |
+17-Sep-2026 08:36:13 | INFO    | | Layout           | multiplier_top.gds                                           |
+17-Sep-2026 08:36:13 | INFO    | | Top Cell         | multiplier_top                                               |
+17-Sep-2026 08:36:13 | INFO    | | Results Dir      | /home/designer/shared/Unic_Cass_IHP/LVS/lvs_run              |
+17-Sep-2026 08:36:13 | INFO    | | Warnings         | 1                                                            |
+17-Sep-2026 08:36:13 | INFO    | | Errors           | 5                                                            |
+17-Sep-2026 08:36:13 | INFO    | | Run Time (s)     | 6.727                                                        |
+17-Sep-2026 08:36:13 | INFO    | +------------------+--------------------------------------------------------------+
+17-Sep-2026 08:36:13 | ERROR   | Key errors:
+17-Sep-2026 08:36:13 | ERROR   |   - 2026-09-15 10:44:57 +0200: Memory Usage (454396K) : ERROR : Netlists don't match
+17-Sep-2026 08:36:13 | ERROR   |   - 2026-09-15 11:14:16 +0200: Memory Usage (456732K) : ERROR : Netlists don't match
+17-Sep-2026 08:36:13 | ERROR   |   - 2026-09-16 19:28:31 +0200: Memory Usage (455536K) : ERROR : Netlists don't match
+17-Sep-2026 08:36:13 | ERROR   |   - 2026-09-17 08:16:25 +0200: Memory Usage (457188K) : ERROR : Netlists don't match
+17-Sep-2026 08:36:13 | ERROR   |   - 2026-09-17 08:21:25 +0200: Memory Usage (457540K) : ERROR : Netlists don't match
+17-Sep-2026 08:36:13 | WARNING | Key warnings:
+17-Sep-2026 08:36:13 | WARNING |   - KLayout binary version (0.30.11) differs from the imported klayout Python package version (0.30.12). Re-align with: pip install klayout==0.30.11
+17-Sep-2026 08:36:13 | INFO    | ==============================================================================
