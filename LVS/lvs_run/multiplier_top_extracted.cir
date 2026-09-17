@@ -1,35 +1,35 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 15/09/2026 11:23
+* Extracted by KLayout with SG13G2 LVS runset on : 17/09/2026 08:36
 
-.SUBCKT multiplier_top Rgm ext_bias on_chip_bias vdd vom vop voutm voutp vref
-+ vss vxn vxp vyn vyp
-M$1 vss \$15 \$22 vss sg13_lv_nmos L=10u W=1u AS=0.34p AD=0.34p PS=3.36u
+.SUBCKT multiplier_top Rgm ext_bias on_chip_bias vdd vom vom$1 vop vop$1 voutm
++ voutp vref vss vxn vxp vyn vyp
+M$1 vss \$14 \$22 vss sg13_lv_nmos L=10u W=1u AS=0.34p AD=0.34p PS=3.36u
 + PD=3.36u rfmode=0
-M$2 vss \$15 \$7 vss sg13_lv_nmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
+M$2 vss \$14 \$7 vss sg13_lv_nmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
 + PD=6.72u rfmode=0
-M$3 vss \$15 \$15 vss sg13_lv_nmos L=10u W=10u AS=3.4p AD=3.4p PS=33.6u
+M$3 vss \$14 \$14 vss sg13_lv_nmos L=10u W=10u AS=3.4p AD=3.4p PS=33.6u
 + PD=33.6u rfmode=0
 M$5 vss vss vss vss sg13_lv_nmos L=10u W=29u AS=9.95p AD=9.95p PS=99.44u
 + PD=99.44u rfmode=0
-M$11 vss \$15 \$25 vss sg13_lv_nmos L=10u W=1u AS=0.34p AD=0.34p PS=3.36u
+M$11 vss \$14 \$25 vss sg13_lv_nmos L=10u W=1u AS=0.34p AD=0.34p PS=3.36u
 + PD=3.36u rfmode=0
-M$19 vss \$15 \$21 vss sg13_lv_nmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
+M$19 vss \$14 \$21 vss sg13_lv_nmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
 + PD=6.72u rfmode=0
-M$22 vss \$15 \$8 vss sg13_lv_nmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
+M$22 vss \$14 \$8 vss sg13_lv_nmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
 + PD=6.72u rfmode=0
-M$46 \$22 vom \$17 vss sg13_lv_nmos L=10u W=5u AS=1.7p AD=1.7p PS=16.8u
+M$46 \$22 vom$1 \$16 vss sg13_lv_nmos L=10u W=5u AS=1.7p AD=1.7p PS=16.8u
 + PD=16.8u rfmode=0
-M$56 \$25 vop \$17 vss sg13_lv_nmos L=10u W=5u AS=1.7p AD=1.7p PS=16.8u
+M$56 \$25 vop$1 \$16 vss sg13_lv_nmos L=10u W=5u AS=1.7p AD=1.7p PS=16.8u
 + PD=16.8u rfmode=0
 M$63 \$22 vref \$9 vss sg13_lv_nmos L=10u W=5u AS=1.7p AD=1.7p PS=16.8u
 + PD=16.8u rfmode=0
 M$68 \$25 vref \$9 vss sg13_lv_nmos L=10u W=5u AS=1.7p AD=1.7p PS=16.8u
 + PD=16.8u rfmode=0
-C$97 \$9 vop cap_cmim w=10u l=10u A=100p P=40u m=8
-C$105 \$9 vom cap_cmim w=10u l=10u A=100p P=40u m=8
-C$113 \$35 vop cap_cmim w=10u l=10u A=100p P=40u m=8
-C$121 \$34 vom cap_cmim w=10u l=10u A=100p P=40u m=8
-C$129 \$10 voutp cap_cmim w=10u l=10u A=100p P=40u m=3
-C$130 \$10 voutm cap_cmim w=10u l=10u A=100p P=40u m=3
+C$97 \$9 vop$1 cap_cmim w=10u l=10u A=100p P=40u m=8
+C$105 \$9 vom$1 cap_cmim w=10u l=10u A=100p P=40u m=8
+C$113 \$34 vop$1 cap_cmim w=10u l=10u A=100p P=40u m=8
+C$121 \$35 vom$1 cap_cmim w=10u l=10u A=100p P=40u m=8
+C$129 \$12 voutp cap_cmim w=10u l=10u A=100p P=40u m=3
+C$130 \$12 voutm cap_cmim w=10u l=10u A=100p P=40u m=3
 C$135 vdd vdd cap_cmim w=10u l=2u A=20p P=24u m=40
 C$175 vss vss cap_cmim w=10u l=2u A=20p P=24u m=10
 M$185 vdd vdd vdd vdd sg13_lv_pmos L=1u W=110u AS=37.4p AD=37.4p PS=245.84u
@@ -38,79 +38,79 @@ M$205 vdd vdd vdd vdd sg13_lv_pmos L=5u W=20u AS=6.8p AD=6.8p PS=54.96u
 + PD=54.96u rfmode=0
 M$223 vdd \$37 \$37 vdd sg13_lv_pmos L=5u W=60u AS=20.4p AD=20.4p PS=160.8u
 + PD=160.8u rfmode=0
-M$234 vdd \$37 \$39 vdd sg13_lv_pmos L=5u W=2u AS=0.68p AD=0.68p PS=5.36u
+M$234 vdd \$37 \$40 vdd sg13_lv_pmos L=5u W=2u AS=0.68p AD=0.68p PS=5.36u
 + PD=5.36u rfmode=0
 M$285 vdd vdd vdd vdd sg13_lv_pmos L=0.5u W=56u AS=19.04p AD=19.04p PS=171.84u
 + PD=171.84u rfmode=0
-M$297 \$39 vref \$10 vdd sg13_lv_pmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
+M$297 \$40 vref \$12 vdd sg13_lv_pmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
 + PD=6.72u rfmode=0
 M$301 vdd vdd vdd vdd sg13_lv_pmos L=10u W=11u AS=3.74p AD=3.74p PS=36.96u
 + PD=36.96u rfmode=0
-M$305 \$39 \$27 \$11 vdd sg13_lv_pmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
+M$305 \$40 \$28 \$13 vdd sg13_lv_pmos L=10u W=2u AS=0.68p AD=0.68p PS=6.72u
 + PD=6.72u rfmode=0
-M$309 vdd \$9 \$40 vdd sg13_lv_pmos L=5u W=8u AS=2.72p AD=2.72p PS=21.44u
+M$309 vdd \$9 \$39 vdd sg13_lv_pmos L=5u W=8u AS=2.72p AD=2.72p PS=21.44u
 + PD=21.44u rfmode=0
-M$310 vdd \$9 \$28 vdd sg13_lv_pmos L=5u W=8u AS=2.72p AD=2.72p PS=21.44u
+M$310 vdd \$9 \$27 vdd sg13_lv_pmos L=5u W=8u AS=2.72p AD=2.72p PS=21.44u
 + PD=21.44u rfmode=0
-M$347 \$10 \$11 vss vss sg13_lv_nmos L=10u W=0.5u AS=0.215p AD=0.215p PS=2.68u
+M$347 \$12 \$13 vss vss sg13_lv_nmos L=10u W=0.5u AS=0.215p AD=0.215p PS=2.68u
 + PD=2.68u rfmode=0
-M$348 \$11 \$11 vss vss sg13_lv_nmos L=10u W=0.5u AS=0.215p AD=0.215p PS=2.68u
+M$348 \$13 \$13 vss vss sg13_lv_nmos L=10u W=0.5u AS=0.215p AD=0.215p PS=2.68u
 + PD=2.68u rfmode=0
 M$353 vss vss vss vss sg13_lv_nmos L=1u W=10.4u AS=3.716p AD=3.716p PS=37.04u
 + PD=37.04u rfmode=0
-M$371 vdd \$17 \$17 vdd sg13_lv_pmos L=10u W=2u AS=0.68p AD=0.68p PS=5.36u
+M$371 vdd \$16 \$16 vdd sg13_lv_pmos L=10u W=2u AS=0.68p AD=0.68p PS=5.36u
 + PD=5.36u rfmode=0
-M$372 vdd \$17 \$9 vdd sg13_lv_pmos L=10u W=2u AS=0.68p AD=0.68p PS=5.36u
+M$372 vdd \$16 \$9 vdd sg13_lv_pmos L=10u W=2u AS=0.68p AD=0.68p PS=5.36u
 + PD=5.36u rfmode=0
 M$379 vdd vdd vdd vdd sg13_lv_pmos L=2u W=244u AS=82.96p AD=82.96p PS=530.16u
 + PD=530.16u rfmode=0
-M$401 vdd vop voutm vdd sg13_lv_pmos L=2u W=20u AS=6.8p AD=6.8p PS=46.8u
+M$401 vdd vop$1 voutm vdd sg13_lv_pmos L=2u W=20u AS=6.8p AD=6.8p PS=46.8u
 + PD=46.8u rfmode=0
-M$406 vdd vom voutp vdd sg13_lv_pmos L=2u W=20u AS=6.8p AD=6.8p PS=46.8u
+M$406 vdd vom$1 voutp vdd sg13_lv_pmos L=2u W=20u AS=6.8p AD=6.8p PS=46.8u
 + PD=46.8u rfmode=0
 M$421 vss vss vss vss sg13_lv_nmos L=2u W=172u AS=58.48p AD=58.48p PS=386.16u
 + PD=386.16u rfmode=0
-M$423 voutm \$10 vss vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=26.8u
+M$423 voutm \$12 vss vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=26.8u
 + PD=26.8u rfmode=0
-M$431 voutp \$10 vss vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=26.8u
+M$431 voutp \$12 vss vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=26.8u
 + PD=26.8u rfmode=0
-R$463 voutm \$35 vss rhigh w=0.5u l=4u ps=0u b=0 m=1
-R$464 voutp \$34 vss rhigh w=0.5u l=4u ps=0u b=0 m=1
-R$492 voutp \$27 vss rhigh w=0.5u l=20u ps=0u b=0 m=1
-R$495 voutm \$27 vss rhigh w=0.5u l=20u ps=0u b=0 m=1
+R$463 voutm \$34 vss rhigh w=0.5u l=4u ps=0u b=0 m=1
+R$464 voutp \$35 vss rhigh w=0.5u l=4u ps=0u b=0 m=1
+R$492 voutp \$28 vss rhigh w=0.5u l=20u ps=0u b=0 m=1
+R$495 voutm \$28 vss rhigh w=0.5u l=20u ps=0u b=0 m=1
 M$517 \$37 \$20 vss vss sg13_lv_nmos L=1u W=1.2u AS=0.408p AD=0.408p PS=3.76u
 + PD=3.76u rfmode=0
 M$518 \$20 \$20 vss vss sg13_lv_nmos L=1u W=1.2u AS=0.408p AD=0.408p PS=3.76u
 + PD=3.76u rfmode=0
 M$527 vss vss vss vss sg13_lv_nmos L=0.5u W=116.2u AS=39.508p AD=39.508p
 + PS=319.44u PD=319.44u rfmode=0
-M$577 vom \$16 \$7 vss sg13_lv_nmos L=10u W=20u AS=6.8p AD=6.8p PS=53.6u
+M$577 vom$1 \$18 \$7 vss sg13_lv_nmos L=10u W=20u AS=6.8p AD=6.8p PS=53.6u
 + PD=53.6u rfmode=0
-M$578 \$16 \$16 vss vss sg13_lv_nmos L=10u W=2u AS=0.68p AD=0.68p PS=5.36u
+M$578 \$18 \$18 vss vss sg13_lv_nmos L=10u W=2u AS=0.68p AD=0.68p PS=5.36u
 + PD=5.36u rfmode=0
-M$580 vop \$16 \$8 vss sg13_lv_nmos L=10u W=20u AS=6.8p AD=6.8p PS=53.6u
+M$580 vop$1 \$18 \$8 vss sg13_lv_nmos L=10u W=20u AS=6.8p AD=6.8p PS=53.6u
 + PD=53.6u rfmode=0
-M$639 \$40 \$13 \$21 vss sg13_lv_nmos L=10u W=20u AS=6.8p AD=6.8p PS=46.8u
+M$639 \$39 vop \$21 vss sg13_lv_nmos L=10u W=20u AS=6.8p AD=6.8p PS=46.8u
 + PD=46.8u rfmode=0
-M$642 \$28 \$14 \$21 vss sg13_lv_nmos L=10u W=20u AS=6.8p AD=6.8p PS=46.8u
+M$642 \$27 vom \$21 vss sg13_lv_nmos L=10u W=20u AS=6.8p AD=6.8p PS=46.8u
 + PD=46.8u rfmode=0
 M$715 vdd \$29 \$29 vdd sg13_lv_pmos L=10u W=3u AS=1.02p AD=1.02p PS=10.08u
 + PD=10.08u rfmode=0
-M$721 \$28 \$29 vop vdd sg13_lv_pmos L=10u W=8u AS=2.72p AD=2.72p PS=26.88u
+M$721 \$27 \$29 vop$1 vdd sg13_lv_pmos L=10u W=8u AS=2.72p AD=2.72p PS=26.88u
 + PD=26.88u rfmode=0
-M$725 \$40 \$29 vom vdd sg13_lv_pmos L=10u W=8u AS=2.72p AD=2.72p PS=26.88u
+M$725 \$39 \$29 vom$1 vdd sg13_lv_pmos L=10u W=8u AS=2.72p AD=2.72p PS=26.88u
 + PD=26.88u rfmode=0
 M$801 \$19 \$19 vss vss sg13_lv_nmos L=1u W=1.2u AS=0.408p AD=0.408p PS=3.76u
 + PD=3.76u rfmode=0
 M$803 \$29 \$19 vss vss sg13_lv_nmos L=1u W=1.2u AS=0.408p AD=0.408p PS=3.76u
 + PD=3.76u rfmode=0
-M$821 \$13 vyp vxp vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=22.72u
+M$821 vop vyp vxp vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=22.72u
 + PD=22.72u rfmode=0
-M$823 \$14 vyn vxp vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=22.72u
+M$823 vom vyn vxp vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=22.72u
 + PD=22.72u rfmode=0
-M$828 \$13 vyn vxn vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=22.72u
+M$828 vop vyn vxn vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=22.72u
 + PD=22.72u rfmode=0
-M$832 \$14 vyp vxn vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=22.72u
+M$832 vom vyp vxn vss sg13_lv_nmos L=2u W=10u AS=3.4p AD=3.4p PS=22.72u
 + PD=22.72u rfmode=0
 M$855 \$I61 on_chip_bias vdd vdd sg13_lv_pmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
@@ -162,9 +162,9 @@ M$1078 \$I58 ext_bias \$20 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
 M$1079 Rgm on_chip_bias \$I49 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
-M$1098 \$I50 on_chip_bias \$15 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
+M$1098 \$I50 on_chip_bias \$14 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
-M$1099 \$I55 on_chip_bias \$16 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
+M$1099 \$I55 on_chip_bias \$18 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
 M$1100 \$I54 on_chip_bias \$20 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
@@ -172,9 +172,9 @@ M$1101 \$I51 on_chip_bias \$19 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
 M$1102 \$I56 ext_bias Rgm vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
-M$1103 \$I53 ext_bias \$15 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
+M$1103 \$I53 ext_bias \$14 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
-M$1104 \$I57 ext_bias \$16 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
+M$1104 \$I57 ext_bias \$18 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
 M$1105 \$I52 ext_bias \$19 vss sg13_lv_nmos L=0.15u W=1u AS=0.34p AD=0.34p
 + PS=2.68u PD=2.68u rfmode=0
